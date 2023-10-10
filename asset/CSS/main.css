@@ -1,0 +1,15 @@
+body{
+    background-color: rgb(67, 98, 98);
+}
+
+.description{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 75%;
+    margin-left: 12.5%;
+}
+
+.titre_description{
+    font-size: 30px;
+}
