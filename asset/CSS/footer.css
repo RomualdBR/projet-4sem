@@ -1,17 +1,17 @@
-foot{
+footer{
     display: flex;
     flex-flow: column;
     color:rgba(200, 150, 200, 0.70);
     font-family: monospace;
 }
-foot section{
+footer section{
     background-color: #0d0b26;
     line-height: 3em;
     display: flex;
     justify-content: space-around;
     flex-direction: row;
 }
-foot img{
+footer img{
     width: 30px;
     height: 30px;
 }
