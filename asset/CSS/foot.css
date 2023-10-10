@@ -2,15 +2,30 @@ foot{
     display: flex;
     flex-flow: column;
     color:rgba(200, 150, 200, 0.70);
+    font-family: monospace;
 }
 foot section{
     background-color: #0d0b26;
-    font-family: monospace;
     line-height: 3em;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+foot img{
+    width: 30px;
+    height: 30px;
+}
+li::before{
+    margin-right: 5px;
+    content: "•"; color: #ec9123;
+}
+ul {
+    list-style: none
 }
 
 
 .Copyright{
+    line-height: 3em;
     background-color: #0c0a24;
 }
 .white{
