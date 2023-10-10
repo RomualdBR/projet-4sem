@@ -1,0 +1,24 @@
+foot{
+    display: flex;
+    flex-flow: column;
+    color:rgba(200, 150, 200, 0.70);
+}
+foot section{
+    background-color: #0d0b26;
+    font-family: monospace;
+    line-height: 3em;
+}
+
+
+.Copyright{
+    background-color: #0c0a24;
+}
+.white{
+    color: aliceblue;
+}
+.bold{
+    font-weight: bolder;
+}
+.orange{
+    color: #ec9123;
+}
