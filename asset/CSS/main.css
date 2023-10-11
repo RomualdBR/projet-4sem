@@ -1,15 +1,162 @@
+/* Corps du site */
+
 body{
-    background-color: rgb(67, 98, 98);
+    background-color: #100e2e;
+    font-family: Arial, Helvetica, sans-serif ;
 }
+/* Haut de page */
 
 .description{
+    background-color: #100e2e;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
     width: 75%;
     margin-left: 12.5%;
 }
 
-.titre_description{
-    font-size: 30px;
+.texte{
+    color: white;
 }
+
+.numero{
+    margin-right: 1%;
+    color: #3724a0;
+}
+
+.main_haut{
+    margin-top: 100px;
+    background-color: #100e2e;
+    justify-content: space-between;
+}
+
+.image_haut{
+    display: flex;
+    justify-content: none;
+    background-color: #100e2e;
+    width: none;
+}
+
+.img1{
+    margin-left: 12.5%;
+    width: 35%;
+}
+
+.img3,.img2{
+    height: auto;
+    width: 16%;
+    margin-left: 4%;
+    
+}
+
+.main_bas{
+    display: flex;
+    margin-left: 12.5%;
+    width: 75%;
+}
+/* Milieu de page Main */
+
+.main_milieu{
+    margin-top: 150px;
+    display: flex;
+    width: 75vw;
+    margin-left: 12.5vw;
+}
+
+.watch_dog{
+    background-color: rgba(255, 235, 205, 0.661);
+    width:35vw;
+    height: auto;
+    margin-right: 2vw;
+}
+
+.stats_dogs{
+    display: flex;
+    flex-wrap: wrap;
+    width: 35vw;
+}
+
+.obj1,.obj2,.obj3,.obj4{
+    display: flex;
+    color:white;
+    width: 15vw;
+    text-align: center;
+    justify-content: center;
+    align-items: center;  
+    height: 40%;  
+    font-family:'Poppins';
+}
+
+.obj1{
+    background-color:#341fa1;
+    margin-right: 2vw;
+}
+.obj2{
+    background-color: #11a25f;
+}
+.obj3{
+    background-color: #ba16aa;
+    margin-right: 2vw;
+}
+.obj4{
+    background-color: #ed921e;
+}
+
+/* Bas de page */
+
+.page_bas{
+    padding-top: 150px;
+}
+
+.titre_equipe{
+    color: white;
+    text-align: center;
+}
+
+.baniere_dorée{
+    width: 15%;
+}
+
+.profils{
+    margin-bottom: 100px;
+    width: 75vw;
+    margin-left: 12.5%;
+    display: flex;
+}
+
+.profil1,.profil2,.profil3{
+    text-align: center;
+    width: 25vw;
+    background-color: #050321;
+    color: white;
+}
+
+.profil1{
+    margin-right: 2vw;
+}
+
+.profil3{
+    margin-left: 2vw;
+}
+
+.img_profil{
+    margin-top: 2vh;
+    border-radius: 100%;
+    width: 50%;
+
+}
+
+.texte_profil{
+    font-size: 13px;
+    gap: 10px;
+}
+
+.img_reseaux{
+    margin-left:  32.5%;
+    width: 35%;
+    display: flex;
+    flex-direction: row;
+}
+.img_reseaux1{  
+    width: 60%;
+}
+
