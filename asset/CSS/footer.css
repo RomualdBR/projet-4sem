@@ -3,7 +3,6 @@ footer{
     flex-flow: column;
     color:rgba(200, 150, 200, 0.70);
     font-family: monospace;
-    position: fixed;
     bottom: O;
     left: 0;
     right: 0;
