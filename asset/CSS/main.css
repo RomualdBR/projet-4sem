@@ -236,6 +236,7 @@ body{
     color: white;
     padding: 1%;
     border: #272647;
+    border-radius: 5%;
 }
 
 .formulaire_contact5{
@@ -245,6 +246,7 @@ body{
     width: 6vw;
     height:5vh;
     margin-top: 2vh;
+    border-radius: 5%;
 }
 
 /*Fin page d'accueil*/
@@ -252,15 +254,27 @@ body{
 /*CSS FORMULAIRE DE CONEXION !!!!*/
 
 .formulair-connexion{
-    margin-top: 30%;
-    margin-left: 40%;
-    margin-right: 40%;
-    margin-bottom: 20%;
+    margin-top: 10%;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 10%;
     display: flex;
     flex-direction: column;
 }
-.formulair-nom,.formulair-mdp{
+
+.formulair-connexion1,.formulair-connexion2{
     background-color: #272647;
-    text-decoration: none;
-    text-decoration: none;
+    color: white;
+    padding: 3%;
+    border: #272647;
+}
+
+.formulair-connexion3{
+    background-color: #ed921e;
+    color: white;
+    border: #ed921e;
+    width: 7vw;
+    height:5vh;
+    margin-top: 2vh;
+    border-radius: 5%;
 }
