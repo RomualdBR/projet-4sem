@@ -3,6 +3,14 @@ footer{
     flex-flow: column;
     color:rgba(200, 150, 200, 0.70);
     font-family: monospace;
+    position: fixed;
+    bottom: O;
+    left: 0;
+    right: 0;
+}
+html body{
+    margin: 0;
+    padding: 0;
 }
 footer section{
     background-color: #0d0b26;
@@ -15,11 +23,11 @@ footer img{
     width: 30px;
     height: 30px;
 }
-li::before{
+footer li::before{
     margin-right: 5px;
     content: "•"; color: #ec9123;
 }
-ul {
+footer ul {
     list-style: none
 }
 
