@@ -115,7 +115,7 @@ body{
     width: 15%;
 }
 
-.profils{
+.profils{   
     margin-bottom: 100px;
     width: 75vw;
     margin-left: 12.5%;
@@ -124,7 +124,8 @@ body{
 
 .profil1,.profil2,.profil3{
     text-align: center;
-    width: 25vw;
+    width: 30vw;
+    height: 45vh;
     background-color: #050321;
     color: white;
 }
@@ -138,7 +139,7 @@ body{
 }
 
 .img_profil{
-    margin-top: 2vh;
+    margin-top: 4vh;
     border-radius: 100%;
     width: 50%;
 
@@ -150,8 +151,9 @@ body{
 }
 
 .img_reseaux{
-    margin-left:  32.5%;
-    width: 35%;
+    padding-top:1vh ;
+    margin-left:  15%;
+    width: 70%;
     display: flex;
     flex-direction: row;
 }
