@@ -95,3 +95,42 @@ header{
     border-top-color: #ec9123;
     border-width: 5px 0px;
 }
+
+
+.nav-other{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 0px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+}
+.nav-other a{
+    color: white;
+    font-weight: bold;
+}
+
+.nav-other .name{
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.nav-other .nav-links ul{
+    display: flex;
+    text-align: center;
+}
+.nav-other .nav-links ul li{
+    margin: 0 25px ;
+    display: inline-block; /* Ajouter cette ligne pour éviter que les liens occupent toute la largeur */
+    line-height: 75px; /* La même hauteur que l'élément parent */
+}
+.nav-other .nav-links ul li.present a{
+    color: #ec9123; 
+}
+.nav-other .nav-links ul li.present{
+    border-top: solid;
+    border-top-color: #ec9123;
+    border-width: 5px 0px;
+}

@@ -1,5 +1,4 @@
 /* Corps du site */
-
 body{
     background-color: #100e2e;
     font-family: Arial, Helvetica, sans-serif ;
@@ -160,3 +159,97 @@ body{
     width: 60%;
 }
 
+
+
+
+
+
+
+/*Page Contact*/
+
+
+
+
+
+
+.banniere{
+    display: flex;
+    background-image: url("../images/banniere.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    width: 100vw;
+    height: 30vh;
+    justify-content: center;
+    align-items: center; 
+    font-size: 5vw; 
+    font-weight: bold;
+}
+
+.info_contact{
+    margin-top: 5%;
+    margin-left: 12.5vw;
+    display: flex;
+    width: 75%;
+    justify-content: space-between;
+}
+
+.img_contact1{
+    background-color: none;
+    width: 25%;
+    padding: 5%;
+}
+
+
+.div_contact{
+    display: flex;
+    padding: 1%;
+    width: 30%;
+    display: block;
+    text-align: center;
+    justify-content: space-between;
+    background-color: #050321;
+}
+
+.formulaire_contact{
+    margin-top: 3%;
+    margin-left: 12.5vw;
+    margin-bottom: 5%;
+}
+
+.formulaire_contact1,.formulaire_contact2{
+    width: 17%;
+    color: white;
+    margin-bottom: 2vh;
+}
+
+.formulaire_contact2{
+    margin-left: 1vw;
+}
+
+.formulaire_contact4{
+    margin-top: 2vh;
+}
+
+
+.formulaire_contact3,.formulaire_contact4{
+    width: 37.60%;
+}
+
+.formulaire_contact1,.formulaire_contact2,.formulaire_contact3,.formulaire_contact4{
+    background-color: #272647;
+    color: white;
+    padding: 1%;
+    border: #272647;
+}
+
+.formulaire_contact5{
+    background-color: #ed921e;
+    color: white;
+    border: #ed921e;
+    width: 6vw;
+    height:5vh;
+    margin-top: 2vh;
+}
+
+/*Fin page d'accueil*/
