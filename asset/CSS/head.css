@@ -23,13 +23,13 @@ a{
 header{
     height: 100vh;
     width:100vw;
-    background-image:url("../images/esport.jpeg");
+    background-image:url("../images/esport.png");
     background-size: cover;
     background-color: #100e2e;
     
 }
 header{
-    background: rgba(16, 14, 46, 0.263) url("../images/esport.jpeg");
+    background: rgba(16, 14, 46, 0.263) url("../images/esport.png");
     background-size: cover;
 }
 .head{
@@ -96,6 +96,7 @@ header{
     border-width: 5px 0px;
 }
 
+/*NAVIGATION DES AUTRE PAGE*/
 
 .nav-other{
     padding-left: 50px;

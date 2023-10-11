@@ -159,17 +159,12 @@ body{
     width: 60%;
 }
 
+/*Fin de bas de page*/
 
 
 
 
-
-
-/*Page Contact*/
-
-
-
-
+/* CSS Page Contact*/
 
 
 .banniere{
@@ -253,3 +248,19 @@ body{
 }
 
 /*Fin page d'accueil*/
+
+/*CSS FORMULAIRE DE CONEXION !!!!*/
+
+.formulair-connexion{
+    margin-top: 30%;
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-bottom: 20%;
+    display: flex;
+    flex-direction: column;
+}
+.formulair-nom,.formulair-mdp{
+    background-color: #272647;
+    text-decoration: none;
+    text-decoration: none;
+}
