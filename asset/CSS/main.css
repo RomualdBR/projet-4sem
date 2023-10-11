@@ -251,7 +251,7 @@ body{
 
 /*Fin page d'accueil*/
 
-/*CSS FORMULAIRE DE CONEXION !!!!*/
+/*CSS FORMULAIRE DE CONEXION*/
 
 .formulair-connexion{
     margin-top: 10%;
@@ -278,3 +278,40 @@ body{
     margin-top: 2vh;
     border-radius: 5%;
 }
+
+/*Fin de page connexion*/
+/*Page de inscription*/
+
+.formulair-inscription{
+    
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+}
+
+.formulair-inscription1,.formulair-inscription2,.formulair-inscription3,.formulair-inscription4{
+    margin-top:none;
+    width: 50%;
+    padding: 2%;
+    margin-top: 2vh;
+    background-color: #272647;
+    color: white;
+    border: #272647;
+}
+
+.formulair-inscription1{
+    margin-top: 8vh;
+}
+
+.formulair-inscription5{
+    margin-top: 2vh;
+    margin-right:40%;
+    margin-bottom: 10%;
+    background-color: #ed921e;
+    color: white;
+    border: #ed921e;
+    border-radius: 5%;
+    width: 7vw;
+    height:5vh;
+}
+
