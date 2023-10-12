@@ -361,6 +361,7 @@ body{
     display: flex;
     justify-content: center;
     margin-top: 5%;
+    margin-bottom: 5%;
     margin-left: 6.25vw;
     margin-right: 6.25vw;
 }
@@ -378,19 +379,22 @@ body{
     border-radius: 10px;
   
 }
-.haut-scores{
-    
+.haut-scores .bord-toprond{
+    border-radius: 10px 0 0 0;
 }
+.haut-scores .bord-toprond2{
+    border-radius:  0 10px 0 0 ;
+}
+
 .bas-scores{
-    height: 10%;
-    overflow-y: auto;
+  overflow-x: auto;
 }
 
 .image-score{
-    border-radius: 100%;
+    border-radius: 50%;
     height: 10%;
     width: 10%;
-    border: solid red;
+    border: solid rgb(255, 255, 255);
 }
 .pseudo-scores{
     display: flex;
