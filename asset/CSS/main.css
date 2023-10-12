@@ -6,6 +6,7 @@ body{
 /* Haut de page */
 
 .description{
+    padding-top: 3vh;
     background-color: #100e2e;
     display: flex;
     flex-direction: row;
@@ -13,11 +14,16 @@ body{
     margin-left: 12.5%;
 }
 
+.titre_description{
+    padding-bottom: 1vh;
+}
+
 .texte{
     color: white;
 }
 
 .numero{
+    font-size: 2vw;
     margin-right: 1%;
     color: #3724a0;
 }
