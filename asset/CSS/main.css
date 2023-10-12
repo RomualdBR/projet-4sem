@@ -7,13 +7,6 @@ body{
     font-family:'Poppins';
 }
 
-
-
-
-
-
-
-
 /* Haut de page */
 .description{
     padding-top: 3vh;
@@ -178,14 +171,6 @@ body{
 }
 
 /*Fin de bas de page*/
-
-
-
-
-
-
-
-
 
 /* CSS Page Contact*/
 
@@ -378,9 +363,7 @@ body{
     border-radius: 10px;
   
 }
-.haut-scores{
-    
-}
+
 .bas-scores{
     height: 10%;
     overflow-y: auto;
@@ -687,3 +670,166 @@ body{
 }
 
 /*Fin de la page MyAccount*/
+
+/*Début de la page memory*/
+
+.titre_jeux{
+    margin-left: 5vw;
+    margin-top: 5vh;
+    font-size: 3vw;
+    color:white;
+}
+
+/*Fin de la page memory*/
+
+/*Début de la page memorylevel*/
+
+    .image_nav_jeux1:hover, .image_nav_jeux2:hover{
+    transform: scale(1.1);
+}
+
+.image_nav_jeux{
+    display: flex;
+    flex-direction: row ;
+}
+
+.image_nav_jeux1,.image_nav_jeux2{
+    width: 6vw;
+    margin-top: 10vh;
+}
+
+.image_nav_jeux2{
+    margin-left: 3vw;
+}
+
+.image_nav_jeux1{
+    margin-left: 6vw;
+}
+
+
+.titre_page_jeux{
+    font-size: 10vw;
+    margin-left: 10vw;
+}
+
+.titre_site{
+    margin-top: 13vh;
+    font-size: 1em;
+    margin-left: 7vw;
+}
+
+.level_page_jeu{
+    margin-left: 2vw;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.titre_regle_jeu{
+    font-size: 4vw;
+}
+
+.regle_du_jeu{
+    margin-top: 2vh;
+    width: 75vw;
+    font-size: 1.5vw;
+}
+
+.niveau1:hover, .niveau2:hover, .niveau3:hover, .niveau4:hover{
+    color: black;
+}
+
+.niveau2,.niveau3,.niveau4{
+    color: white;
+    font-size: 3vw;
+    margin-left: 20%;
+}
+
+.niveau2{
+    background-color: green;
+    padding: 1%;
+}
+
+.niveau3{
+    background-color: #c16e03;
+    padding: 1%;
+}
+
+.niveau4{
+    background-color: red;
+    padding: 1%;
+}
+
+.niveau1{
+    background: red;
+    padding: 1%;
+    color: white;
+    font-size: 3vw;
+    margin-left: 20%;
+}
+
+.theme1{
+
+    font-size: 4vw;
+    margin-top: 5vh;
+    margin-bottom: 1.5vh;
+}
+
+.theme{
+    font-size: 4vw;
+    margin-top: 3vh;
+    margin-bottom: 1.5vh;
+}
+
+/*Fin de la page momorylevel*/
+
+/*Début page jeu thème 1*/
+
+.page_nav_theme1{
+    display: flex;
+}
+
+.image_nav_jeux1_theme1:hover,.image_nav_jeux2_theme1:hover{
+    transform: scale(1.1);
+}
+
+.image_nav_jeux1_theme1,.image_nav_jeux2_theme1{
+    width: 5vw;
+    margin-left: 2vw;
+    margin-top: 3vh;
+}
+
+.titre_page_jeux_theme1{
+    margin-left:26vw; ;
+    font-size: 5vw;
+}
+
+.titre_site_theme1{
+    margin-top:8vh;
+    font-size: 1em;
+    margin-left: 20vw;
+}
+
+.page_jeu_theme1{
+    background-image: url(../images/space.jpeg);
+}
+
+.div4x4{
+    display: flex;
+    justify-content: space-around;
+}
+
+.carte_image_4x4{
+    width: 12.5vw;
+}
+
+.jeu4x4{
+    background-color: #11a25f;
+}
+
+.case4x4{
+}
+
+
+
+
+/*Fin page jeu thème 1*/
