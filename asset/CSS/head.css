@@ -16,6 +16,11 @@ body{
 a{
     align-items: center;
 }
+
+li a:hover{
+    color: #ec9123;
+}
+
 .present{
     height: 75px;
 }
@@ -76,6 +81,11 @@ header{
 .main-nav .name{
     font-size: 1em;
     font-weight: bold;
+}
+
+.photo_de_profil_myaccount_nav{
+    margin-top: 1vh;
+    width: 3.5vw;
 }
 
 .main-nav .nav-links ul{
