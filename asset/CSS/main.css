@@ -1,7 +1,10 @@
 /* Corps du site */
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Poppins:wght@200;600&display=swap');
+
 body{
     background-color: #100e2e;
-    font-family: Arial, Helvetica, sans-serif ;
+    font-family:'Poppins';
 }
 /* Haut de page */
 
@@ -283,7 +286,7 @@ body{
     border: #ed921e;
     width: 7vw;
     height:5vh;
-    margin-top: 2vh;
+    margin-top: 0vh;
     border-radius: 5%;
 }
 
@@ -323,3 +326,173 @@ body{
     height:5vh;
 }
 
+.formulair-inscription6{
+    margin-top: 2vh;
+    margin-right: 15vw;
+}
+
+
+/*CSS de la page MyAccount*/
+.MyAccount{
+    background-image:url(../images/space.jpeg);
+    height: 100%;
+    padding-bottom: 0.5vh;
+    padding-top: 5vh;
+}
+
+.Banière_profil_utilisateur{
+    display: flex;
+    background-color: #272647;
+    height: 25vh;
+    width: 60vw;
+    margin-left: 20%;
+
+}
+
+.photo_de_profil_banniere{
+    width: 8vw;
+    height: 15vh;
+    
+}
+
+.pseudo{
+    display: flex;
+    font-size: 3vh;
+    margin-top: 2vh;
+}
+
+.bloc_utilisateur{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    margin-left: 6vh;
+}
+
+.caracteristique_utilisateur{
+    display: flex;
+    margin-left: 2vw;
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.info_utilisateur{
+    margin-bottom: 1vh;
+}
+
+.info_utilisateur1{
+    margin-top: 2vh;
+}
+
+.info_utilisateur2,.info_utilisateur3,.info_utilisateur4{
+    margin-top: 1vh;
+}
+
+.description_utilisateur{
+    display: flex;
+    flex-direction:column;
+    margin-left: 3vh;
+    margin-top:2vh;
+}
+
+.description_profil{
+    height: 18vh;
+    background-color: #100e2e;
+    border: #100e2e;
+}
+
+
+
+
+.changement_info_utilisateur{
+    margin-top: 2vh;
+    background-color:#272647 ;
+    width: 60vw;
+    margin-left: 20vw;
+    margin-bottom: 5vh;
+}
+
+.changement_info_mail1,.changement_info_mail2{
+    margin-left: 17vw;
+}
+
+.changement_info_mail0{
+    margin-left: 17vw;
+    margin-top: 4vh;
+}
+
+.changement_info_mail1{
+    padding-top: 2vh;
+}
+
+.changement_info_mail2{
+    background-color: #100e2e;
+    border: #100e2e;
+    width: 30%;
+    height: 3vh;
+}
+
+.changement_info_mail3{
+    margin-left: 17vw;
+    margin-top: 2vh;
+    margin-bottom: 5vh;
+    width: 5vw;
+    background-color: #ed921e;
+    border: #ed921e;
+    color: white;
+    height: 3vh;
+}
+
+.changement_info_mail4{
+    padding-top: 4vh;
+    margin-left: 17vw;
+    width: 50%;
+}
+
+
+
+
+
+.changement_info_mots_de_passe1,.changement_info_mots_de_passe2{
+    margin-left: 17vw;
+}
+
+.changement_info_mots_de_passe1,.changement_info_mots_de_passe2{
+    margin-left: 17vw;
+}
+
+.changement_info_mots_de_passe0{
+    padding-top: 4vh;
+    margin-left: 17vw;
+}
+
+.changement_info_mots_de_passe1{
+    padding-top: 2vh;
+}
+
+.changement_info_mots_de_passe2{
+    background-color: #100e2e;
+    border: #100e2e;
+    width: 30%;
+    height: 3vh;
+}
+
+.changement_info_mots_de_passe4{
+    margin-left: 17vw;
+    margin-top: 3vh;
+    width: 50%;
+}
+
+.changement_info_mots_de_passe3{
+    margin-left: 17vw;
+    margin-top: 2vh;
+    margin-bottom: 5vh;
+    width: 5vw;
+    background-color: #ed921e;
+    border: #ed921e;
+    color: white;
+    height: 3vh;
+}
+
+/*Fin de la page MyAccount*/
