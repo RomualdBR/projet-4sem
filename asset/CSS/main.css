@@ -349,7 +349,7 @@ body{
     margin-left: 6.25vw;
     margin-right: 6.25vw;
 }
-.GOAT td, th{
+.GOAT td ,.th_score{
     padding: 20px;
     background-color: #341fa1;
 }
@@ -809,27 +809,75 @@ body{
     margin-left: 20vw;
 }
 
-.page_jeu_theme1{
+.page_jeu_theme1_tab4x4{
     background-image: url(../images/space.jpeg);
-}
-
-.div4x4{
+    padding-top: 10%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
-.carte_image_4x4{
+.taille_page{
+    height: 78vh;
+}
+
+.tableau4x4{
+    border-collapse: collapse;
+}
+
+.image_jeu_thème1{
     width: 12.5vw;
+    height: 16vh;
+    margin-right: 5px;
+
 }
 
-.jeu4x4{
-    background-color: #11a25f;
+.colone4x4{
 }
 
-.case4x4{
+.ligne4x4{
 }
 
+.page_jeu_theme1_tab4x4{
 
+}
+
+.tableau8x8{
+ border-collapse: collapse;
+ align-items: center;
+}
+
+.ligne8x8{}
+
+.colone8x8{
+
+}
+
+.image_jeu_theme1_8x8{
+    width: 7vw;
+    margin-right: 5px;
+}
+.page_jeu_theme1_tab8x8{
+    background-image: url(../images/space.jpeg);
+    display: flex;
+    justify-content: center;
+}
+
+.tableau12x12{
+    border-collapse: collapse;
+     align-items: center;
+}
+
+.page_jeu_theme1_tab12x12{
+    background-image: url(../images/space.jpeg);
+    display: flex;
+    padding-top:2% ;
+    justify-content: center;
+}
+
+.image_jeu_theme1_12x12{
+    width: 4.3vw;
+    margin-right: 5px;
+}
 
 
 /*Fin page jeu thème 1*/
