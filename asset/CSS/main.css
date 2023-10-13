@@ -692,6 +692,26 @@ html{
     color:white;
 }
 
+.selection_jeux button,.image_nav{
+    width: 28vw;
+    height: 20vw;
+    margin-left: 2vw;
+    background-color: #272647;
+    border: none;
+    border-radius: 2vh;
+}
+
+.selection_jeux{
+    border-radius: 2vh;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    margin-top: 5vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    margin-bottom: 5vh;
+    background-color: #272647;
+}
+
 /*Fin de la page memory*/
 
 /*Début de la page memorylevel*/
