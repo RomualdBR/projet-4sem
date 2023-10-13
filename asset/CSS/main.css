@@ -580,6 +580,7 @@ body{
     height: 18vh;
     background-color: #100e2e;
     border: #100e2e;
+    color: white;
 }
 
 
@@ -607,6 +608,7 @@ body{
 }
 
 .changement_info_mail2{
+    color: white;
     background-color: #100e2e;
     border: #100e2e;
     width: 30%;
@@ -652,6 +654,7 @@ body{
 }
 
 .changement_info_mots_de_passe2{
+    color: white;
     background-color: #100e2e;
     border: #100e2e;
     width: 30%;
@@ -816,8 +819,11 @@ body{
 }
 
 .page_jeu_theme1_tab4x4{
-    background-image: url(../images/space.jpeg);
-    padding-top: 10%;
+    background-image: url(../images/imagetheme/op.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    padding-top: 8%;
     display: flex;
     justify-content: center;
 }
@@ -831,8 +837,8 @@ body{
 }
 
 .image_jeu_thème1{
-    width: 12.5vw;
-    height: 16vh;
+    width: 9vw;
+    height: auto;
     margin-right: 5px;
 
 }
@@ -844,13 +850,17 @@ body{
 
 
 .image_jeu_theme1_8x8{
-    width: 7vw;
+    width: 4.8vw;
     margin-right: 5px;
 }
 .page_jeu_theme1_tab8x8{
-    background-image: url(../images/space.jpeg);
+    background-image: url(../images/imagetheme/op.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: center;
+    padding-top: 1%;
+    width: 100%;
 }
 
 .tableau12x12{
@@ -859,16 +869,76 @@ body{
 }
 
 .page_jeu_theme1_tab12x12{
-    background-image: url(../images/space.jpeg);
+    background-image: url(../images/imagetheme/op.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     padding-top:2% ;
     justify-content: center;
 }
 
 .image_jeu_theme1_12x12{
-    width: 4.3vw;
+    width: 3vw;
     margin-right: 5px;
 }
 
+
+.page_jeu_theme2_tab4x4{
+    background-image: url(../images/imagetheme/naruto.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    padding-top: 8%;
+    display: flex;
+    justify-content: center;
+}
+
+.page_jeu_theme2_tab8x8{
+    background-image: url(../images/imagetheme/naruto.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    padding-top: 1%;
+    width: 100%;
+}
+
+.page_jeu_theme2_tab12x12{
+    background-image: url(../images/imagetheme/naruto.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    padding-top:2% ;
+    justify-content: center;
+}
+
+.page_jeu_theme3_tab4x4{
+    background-image: url(../images/imagetheme/lol.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    padding-top: 8%;
+    display: flex;
+    justify-content: center;
+}
+
+.page_jeu_theme3_tab8x8{
+    background-image: url(../images/imagetheme/lol.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    padding-top: 1%;
+    width: 100%;
+}
+
+.page_jeu_theme3_tab12x12{
+    background-image: url(../images/imagetheme/lol.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    padding-top:2% ;
+    justify-content: center;
+}
 
 /*Fin page jeu thème 1*/
