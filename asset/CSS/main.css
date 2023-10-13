@@ -346,6 +346,7 @@ body{
     display: flex;
     justify-content: center;
     margin-top: 5%;
+    margin-bottom: 5%;
     margin-left: 6.25vw;
     margin-right: 6.25vw;
 }
@@ -363,17 +364,22 @@ body{
     border-radius: 10px;
   
 }
+.haut-scores .bord-toprond{
+    border-radius: 10px 0 0 0;
+}
+.haut-scores .bord-toprond2{
+    border-radius:  0 10px 0 0 ;
+}
 
 .bas-scores{
-    height: 10%;
-    overflow-y: auto;
+  overflow-x: auto;
 }
 
 .image-score{
-    border-radius: 100%;
+    border-radius: 50%;
     height: 10%;
     width: 10%;
-    border: solid red;
+    border: solid rgb(255, 255, 255);
 }
 .pseudo-scores{
     display: flex;
@@ -831,26 +837,11 @@ body{
 
 }
 
-.colone4x4{
-}
-
-.ligne4x4{
-}
-
-.page_jeu_theme1_tab4x4{
-
-}
-
 .tableau8x8{
  border-collapse: collapse;
  align-items: center;
 }
 
-.ligne8x8{}
-
-.colone8x8{
-
-}
 
 .image_jeu_theme1_8x8{
     width: 7vw;
