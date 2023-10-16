@@ -24,8 +24,8 @@ ENGINE = INNODB;
 
 CREATE TABLE IF NOT EXISTS score (
     id INT(11) UNSIGNED NOT NULL AUTO_INCREMENT,
-    id_joueur INT(11) UNSIGNED NOT NULL,
-    id_jeu INT(11) UNSIGNED NOT NULL,
+    id_joueur INT(11) UNSIGNED,
+    id_jeu INT(11) UNSIGNED,
     difficulte VARCHAR(15) NOT NULL, 
     score INT(11) NOT NULL, 
     date_heure_partie DATETIME NOT NULL,
@@ -38,8 +38,8 @@ ENGINE = INNODB;
 
 CREATE TABLE IF NOT EXISTS messages (
     id INT(11) UNSIGNED NOT NULL AUTO_INCREMENT,
-    id_jeu INT(11) UNSIGNED NOT NULL,
-    id_expediteur INT(11) UNSIGNED NOT NULL,
+    id_jeu INT(11) UNSIGNED,
+    id_expediteur INT(11) UNSIGNED,
     texte_message TEXT NOT NULL,
     date_heure_message DATETIME NOT NULL,
     PRIMARY KEY(id),
