@@ -23,19 +23,23 @@ CREATE TABLE IF NOT EXISTS score (
     score INT(11) NOT NULL, 
     date_heure_partie DATETIME NOT NULL,
     PRIMARY KEY (id)
+    CONSTRAINT fk_score_utilisateur FOREIGN KEY id_joueur REFERENCES utilisateur(id) ON DELETE SET NULL
+    CONSTRAINT fk_score_jeu FOREIGN KEY id_jeu REFERENCES jeu(id) ON DELETE SET NULL
 )
 CHARACTER SET 'utf8'
 ENGINE = INNODB;
 
 
 
-CREATE TABLE IF NOT EXISTS message (
+CREATE TABLE IF NOT EXISTS messages (
     id INT(11) UNSIGNED NOT NULL AUTO_INCREMENT,
     id_jeu INT(11) UNSIGNED NOT NULL,
     id_expediteur INT(11) UNSIGNED NOT NULL,
     texte_message TEXT NOT NULL,
     date_heure_message DATETIME NOT NULL,
     PRIMARY KEY(id)
+    CONSTRAINT fk_message_jeu FOREIGN KEY id_jeu REFERENCES jeu(id) ON DELETE SET NULL
+    CONSTRAINT fk_message_utilisateur FOREIGN KEY id_expediteur REFERENCES utilisateur(id) ON DELETE SET NULL
 )
 CHARACTER SET 'utf8'
 ENGINE = INNODB;
