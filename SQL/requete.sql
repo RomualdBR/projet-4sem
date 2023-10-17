@@ -35,7 +35,7 @@ INNER JOIN utilisateur AS U
 ON S.id_joueur = U.id
 INNER JOIN jeu AS J
 ON S.id_jeu = J.id
-WHERE J.nom_jeu = "The Power Of Memory" or U.pseudo = "utilisateur6" or S.difficulte = "Difficile"
+WHERE J.nom_jeu = "The Power Of Memory" OR U.pseudo = "utilisateur6" OR S.difficulte = "Difficile"
 ORDER BY J.nom_jeu ASC,nb_difficulte DESC, S.score DESC;
 
 -- doublon de scores
@@ -47,3 +47,16 @@ ON S.id_joueur = U.id
 INNER JOIN jeu AS J
 ON S.id_jeu = J.id
 WHERE J.nom_jeu = "The Power Of Memory" AND U.pseudo = "utilisateur2" AND S.difficulte = "Difficile"
+
+--si la requete precedente retourne un score
+UPDATE S
+SET S.score = "nouvelle valeur de score"
+WHERE J.nom_jeu = "The Power Of Memory" AND U.pseudo = "utilisateur2" AND S.difficulte = "Difficile";
+
+--si la requete est precedente retourne rien
+INSERT INTO score(id_joueur,id_jeu,difficulte,score)
+VALUES ('recuperation automatique','recuperation automatique','recuperation automatique','valeur du score')
+
+
+
+
