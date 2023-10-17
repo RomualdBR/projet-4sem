@@ -61,6 +61,11 @@ VALUES ('recuperation automatique','recuperation automatique','recuperation auto
 INSERT INTO messages(texte_message)
 VALUES  ('ceci est un message auto'),
 
+-- recupération des messages des dernières 24h
 
-
+SELECT M.texte_message, U.pseudo, M.date_heure_message, (M.id_expediteur = 1) as isSender
+FROM messages AS M
+INNER JOIN utilisateur AS U
+ON M.id_expediteur = U.id
+WHERE M.date_heure_message >= NOW() - INTERVAL 1 DAY
 
