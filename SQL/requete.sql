@@ -29,10 +29,11 @@ SELECT J.nom_jeu, U.pseudo, S.difficulte, S.score, (
     WHEN S.difficulte = "Normal" THEN 2
     WHEN S.difficulte = "Facile" THEN 1
 	END
-) AS test
+) AS nb_difficulte
 FROM score AS S
 INNER JOIN utilisateur AS U
 ON S.id_joueur = U.id
 INNER JOIN jeu AS J
 ON S.id_jeu = J.id
-ORDER BY J.nom_jeu ASC,test DESC, S.score DESC;
+WHERE J.nom_jeu = "The Power Of Memory" or U.pseudo = "utilisateur6" or S.difficulte = "Difficile"
+ORDER BY J.nom_jeu ASC,nb_difficulte DESC, S.score DESC;
