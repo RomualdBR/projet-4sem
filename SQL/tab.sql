@@ -3,11 +3,11 @@ USE the_power_of_memory;
 
 CREATE TABLE IF NOT EXISTS utilisateur ( 
     id INT(11) UNSIGNED NOT NULL AUTO_INCREMENT,
-    email VARCHAR(50) NOT NULL, 
+    email VARCHAR(50) NOT NULL UNIQUE, 
     mot_de_passe VARCHAR(50) NOT NULL,
-    pseudo VARCHAR(50) NOT NULL, 
+    pseudo VARCHAR(50) NOT NULL UNIQUE, 
     date_heure_inscription DATETIME NOT NULL,
-    date_heure_connexion DATETIME NOT NULL,
+    date_heure_connexion DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
     PRIMARY KEY(id)
 )
 CHARACTER SET 'utf8'
@@ -48,3 +48,4 @@ CREATE TABLE IF NOT EXISTS messages (
 )
 CHARACTER SET 'utf8'
 ENGINE = INNODB;
+
