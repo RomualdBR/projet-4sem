@@ -1,3 +1,5 @@
+-- story 1
+
 CREATE DATABASE IF NOT EXISTS the_power_of_memory CHARACTER SET 'utf8';
 USE the_power_of_memory;
 

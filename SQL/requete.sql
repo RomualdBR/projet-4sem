@@ -75,5 +75,5 @@ SELECT S.*, U.pseudo
 FROM score as S
 INNER JOIN utilisateur as U
 ON S.id_joueur = U.id
-WHERE pseudo LIKE %au%;
+WHERE pseudo LIKE "%au%";
 
