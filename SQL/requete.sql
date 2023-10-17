@@ -69,3 +69,11 @@ INNER JOIN utilisateur AS U
 ON M.id_expediteur = U.id
 WHERE M.date_heure_message >= NOW() - INTERVAL 1 DAY
 
+-- recherche de au dans les utilisateurs
+
+SELECT S.*, U.pseudo
+FROM score as S
+INNER JOIN utilisateur as U
+ON S.id_joueur = U.id
+WHERE pseudo LIKE %au%;
+
