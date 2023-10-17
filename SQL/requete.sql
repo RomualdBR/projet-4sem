@@ -22,10 +22,17 @@ VALUES ('The Power Of Memory') ;
 
 -- affichage des scores
 
-SELECT J.nom_jeu, U.pseudo, S.difficulte, S.score
+SELECT J.nom_jeu, U.pseudo, S.difficulte, S.score, (
+	SELECT 
+    CASE
+    WHEN S.difficulte = "Difficile" THEN 3
+    WHEN S.difficulte = "Normal" THEN 2
+    WHEN S.difficulte = "Facile" THEN 1
+	END
+) AS test
 FROM score AS S
 INNER JOIN utilisateur AS U
 ON S.id_joueur = U.id
 INNER JOIN jeu AS J
 ON S.id_jeu = J.id
-ORDER BY J.nom_jeu ASC, S.score ASC
+ORDER BY J.nom_jeu ASC,test DESC, S.score DESC;
