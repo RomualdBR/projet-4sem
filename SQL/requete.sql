@@ -58,8 +58,8 @@ INSERT INTO score(id_joueur,id_jeu,difficulte,score)
 VALUES ('recuperation automatique','recuperation automatique','recuperation automatique','valeur du score')
 
 --ajout de ligne dans la table message
-INSERT INTO messages(texte_message)
-VALUES  ('ceci est un message auto'),
+INSERT INTO messages(id_jeu, id_expediteur, texte_message)
+VALUES  (2, 3, 'ceci est un message auto'),
 
 -- recupération des messages des dernières 24h
 
