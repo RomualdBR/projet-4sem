@@ -20,5 +20,12 @@ AND mot_de_passe = 'motdepasse7';
 INSERT INTO jeu (nom_jeu)
 VALUES ('The Power Of Memory') ;
 
+-- affichage des scores
 
-
+SELECT J.nom_jeu, U.pseudo, S.difficulte, S.score
+FROM score AS S
+INNER JOIN utilisateur AS U
+ON S.id_joueur = U.id
+INNER JOIN jeu AS J
+ON S.id_jeu = J.id
+ORDER BY J.nom_jeu ASC, S.score ASC
