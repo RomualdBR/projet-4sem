@@ -27,3 +27,15 @@ VALUES
 (4, 3, "évidement !", '2019-11-28 15:09')
 (6, 5, "hope we hang out together", '2019-11-28 15:10')
 (7, 8, "Suka ! bliats", '2019-11-28 00:01' )
+
+
+-- ordre message par création du plus récent au plus ancien story 9
+
+SELECT U.pseudo,U2.pseudo,M*
+FROM messages as M 
+INNER JOIN utilisateurs as U
+ON M.id_expediteur = U.utilisateurs
+INNER JOIN utilisateurs as U2
+ON M.id_receveur = U.utilisateurs
+WHERE (id_expediteur = 1 and id_receveur = 2) or (id_expediteur = 2 and id_receveur = 1)
+ORDER BY date_envoie DESC
