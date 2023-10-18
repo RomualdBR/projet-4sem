@@ -31,11 +31,11 @@ VALUES
 
 -- ordre message par création du plus récent au plus ancien story 9
 
-SELECT U.pseudo,U2.pseudo,M.*
-FROM messages as M 
-INNER JOIN utilisateurs as U
+SELECT U.pseudo AS pseudo_expediteur,U2.pseudo AS pseudo_receveur,M.contenu AS Texte,M.date_envoie AS date_envoie
+FROM messages AS M 
+INNER JOIN utilisateurs AS U
 ON M.id_expediteur = U.id
-INNER JOIN utilisateurs as U2
-ON M.id_receveur = U.id
-WHERE (id_expediteur = 1 and id_receveur = 2) or (id_expediteur = 2 and id_receveur = 1)
-ORDER BY date_envoie DESC
+INNER JOIN utilisateurs AS U2
+ON M.id_receveur = U2.id
+WHERE id_expediteur = 1 and id_receveur = 2 OR id_expediteur = 2 and id_receveur = 1
+ORDER BY date_envoie DESC;
