@@ -95,3 +95,29 @@ WHERE id = "id de l'utilisateur";
 
 DElete FROM messages
 WHERE id = "id du message a supprimer"
+
+-- Story 16 
+
+SELECT U.pseudo as pseudo_du_demandeur,S.nom, S.description, S.adresse, S.code_postal, S.ville, S.pays, S.date_service, S.informations, COUNT(U2.id) as id_utilisateur_preneur,U2.pseudo as utilisateur_preneur,U2.ville,U2.pays
+FROM services AS S
+LEFT JOIN utilisateurs AS U
+ON S.id_utilisateur = U.id
+LEFT JOIN services_utilisateurs AS SU
+ON S.id = SU.id_service
+LEFT JOIN utilisateurs AS U2 
+ON U2.id = SU.id_utilisateur
+GROUP BY U2.id
+ORDER BY S.date_service DESC, S.ville ASC
+
+-- Story 18 
+
+SELECT S., U.pseudo, U2. 
+FROM services_utilisateurs AS SU 
+LEFT JOIN utilisateurs AS U 
+ON SU.id_utilisateur = U.id 
+LEFT JOIN services AS S ON SU.id_service = S.id 
+LEFT JOIN utilisateurs AS U2 
+ON S.id_utilisateur = U2.id 
+WHERE SU.id_utilisateur = "2"  
+ORDER BY SU.date_inscription 
+LIMIT 1;
