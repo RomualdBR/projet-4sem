@@ -48,3 +48,20 @@ INNER JOIN utilisateurs AS U2
 ON M.id_receveur = U2.id
 WHERE id_expediteur = 1 and id_receveur = 2 OR id_expediteur = 2 and id_receveur = 1
 ORDER BY date_envoie DESC;
+
+-- Story 10
+
+INSERT INTO services (id_utilisateur,nom,description,adresse,code_postal,ville,pays,date_service,informations)
+VALUES (11,"Sortir les chats","ne pas oublier d'ouvrir les fenêtres.","6 Rue des abeilles","95220","Herblay sur seine", 'France', "2024:12:20 18:39:12");
+
+SELECT U.pseudo, S.nom, S.description, S.adresse, S.code_postal, S.ville, S.pays, S.date_service, S.informations, U2.pseudo as pseudo_inscrit
+FROM services AS S
+LEFT JOIN utilisateurs as U
+ON S.id_utilisateur = U.id
+LEFT JOIN services_utilisateurs as SU
+ON S.id = SU.id_service
+LEFT JOIN utilisateurs as U2
+ON U2.id = SU.id_utilisateur
+WHERE S.date_service > NOW()
+AND U2.pseudo IS NULL
+ORDER BY S.date_service DESC, S.ville ASC;
