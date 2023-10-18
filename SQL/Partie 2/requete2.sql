@@ -109,7 +109,7 @@ ON U2.id = SU.id_utilisateur
 GROUP BY U2.id
 ORDER BY S.date_service DESC, S.ville ASC
 
--- Story 18 
+-- Story 17
 
 SELECT S., U.pseudo, U2. 
 FROM services_utilisateurs AS SU 
