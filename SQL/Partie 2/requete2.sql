@@ -81,8 +81,6 @@ ON SU.id_utilisateur = U.id
 DELETE FROM services
 WHERE id = "utilisateur"
 
-DELETE FROM services_utilisateurs
-WHERE id = "utilisateur"
 
 -- story 13
 
