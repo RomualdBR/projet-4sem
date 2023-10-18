@@ -35,8 +35,8 @@ FROM messages AS M
 INNER JOIN utilisateurs AS U
 ON M.id_expediteur = U.id
 INNER JOIN utilisateurs AS U2
-ON M.id_receveur = U.id
-ORDER BY date_envoie DESC
+ON M.id_receveur = U2.id
+ORDER BY date_envoie DESC;
 
 -- ordre message par création du plus récent au plus ancien story 9
 
@@ -52,7 +52,7 @@ ORDER BY date_envoie DESC;
 -- Story 10
 
 INSERT INTO services (id_utilisateur,nom,description,adresse,code_postal,ville,pays,date_service,informations)
-VALUES (11,"Sortir les chats","ne pas oublier d'ouvrir les fenêtres.","6 Rue des abeilles","95220","Herblay sur seine", 'France', "2024:12:20 18:39:12");
+VALUES (11,"Sortir les chats","ne pas oublier d'ouvrir les fenêtres.","6 Rue des abeilles","95220","Herblay sur seine", 'France', "2024:12:20 18:39:12", NULL);
 
 SELECT U.pseudo, S.nom, S.description, S.adresse, S.code_postal, S.ville, S.pays, S.date_service, S.informations, U2.pseudo as pseudo_inscrit
 FROM services AS S
