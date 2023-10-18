@@ -81,7 +81,6 @@ ON SU.id_utilisateur = U.id
 DELETE FROM services
 WHERE id = "utilisateur"
 
-
 -- story 13
 
 DELETE FROM services_utilisateurs
@@ -91,3 +90,8 @@ WHERE id_service = "id du service" AND id_utilisateur = "id du suppresseur";
 
 DELETE FROM utilisateur
 WHERE id = "id de l'utilisateur";
+
+-- story 15
+
+DElete FROM messages
+WHERE id = "id du message a supprimer"
