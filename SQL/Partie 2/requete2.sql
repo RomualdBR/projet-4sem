@@ -65,3 +65,12 @@ ON U2.id = SU.id_utilisateur
 WHERE S.date_service > NOW()
 AND U2.pseudo IS NULL
 ORDER BY S.date_service DESC, S.ville ASC;
+
+ 
+-- Story 12 
+
+DELETE FROM services
+WHERE id = "utilisateur"
+
+DELETE FROM services_utilisateurs
+WHERE id = "utilisateur"
