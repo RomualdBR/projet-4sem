@@ -83,3 +83,13 @@ WHERE id = "utilisateur"
 
 DELETE FROM services_utilisateurs
 WHERE id = "utilisateur"
+
+-- story 13
+
+DELETE FROM services_utilisateurs
+WHERE id_service = "id du service" AND id_utilisateur = "id du suppresseur";
+
+-- story 14
+
+DELETE FROM utilisateur
+WHERE id = "id de l'utilisateur";
