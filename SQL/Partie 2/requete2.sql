@@ -1,3 +1,4 @@
+
 /*Storie 7*/
 
 INSERT INTO messages (id_expediteur, id_receveur, contenu, date_envoie)
@@ -28,6 +29,14 @@ VALUES
 (6, 5, "hope we hang out together", '2019-11-28 15:10'),
 (7, 8, "Suka ! bliats", '2019-11-28 00:01' );
 
+-- story 8
+SELECT U.pseudo,U2.pseudo,M.contenu,M.date_envoie
+FROM messages AS M
+INNER JOIN utilisateurs AS U
+ON M.id_expediteur = U.id
+INNER JOIN utilisateurs AS U2
+ON M.id_receveur = U.id
+ORDER BY date_envoie DESC
 
 -- ordre message par création du plus récent au plus ancien story 9
 
