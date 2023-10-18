@@ -66,7 +66,16 @@ WHERE S.date_service > NOW()
 AND U2.pseudo IS NULL
 ORDER BY S.date_service DESC, S.ville ASC;
 
- 
+ /*Story 11*/
+
+SELECT U.pseudo AS inscriveur ,U.portable ,U2.pseudo AS incrit ,S.*
+FROM services AS S, services_utilisateurs as SU
+
+LEFT JOIN utilisateurs as U
+ON S.id_utilisateur = U.id
+LEFT JOIN utilisateurs as U2
+ON SU.id_utilisateur = U.id
+
 -- Story 12 
 
 DELETE FROM services
