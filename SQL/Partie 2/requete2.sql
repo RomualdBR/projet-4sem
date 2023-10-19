@@ -88,13 +88,13 @@ WHERE id_service = "id du service" AND id_utilisateur = "id du suppresseur";
 
 -- story 14
 
-DELETE FROM utilisateur
+DELETE FROM *
 WHERE id = "id de l'utilisateur";
 
 -- story 15
 
 DElete FROM messages
-WHERE id = "id du message a supprimer"
+WHERE id_expediteur = "id du message a supprimer"
 
 -- Story 16 
 
@@ -121,3 +121,28 @@ ON S.id_utilisateur = U2.id
 WHERE SU.id_utilisateur = "2"  
 ORDER BY SU.date_inscription 
 LIMIT 1;
+
+-- Story 18 
+
+SELECT M.* ,(SELECT pseudo 
+             FROM utilisateurs 
+             WHERE id = 2)
+             as pseudo, (SELECT COUNT(S.id)
+                         FROM services_utilisateurs AS SU
+                         LEFT JOIN services AS S
+                         ON SU.id_service = S.id
+                         WHERE M.month = MONTH(S.date_service) AND S.id_utilisateur =2 ) AS nombre_requete
+     FROM
+         (SELECT 1 as month UNION
+          SELECT 2 as month UNION
+          SELECT 3 as month UNION
+          SELECT 4 as month UNION
+          SELECT 5 as month UNION
+          SELECT 6 as month UNION
+          SELECT 7 as month UNION
+          SELECT 8 as month UNION
+          SELECT 9 as month UNION
+          SELECT 10 as month UNION
+          SELECT 11 as month UNION
+          SELECT 12 as month 
+          )AS M
