@@ -1,4 +1,3 @@
-
 /*Storie 7*/
 
 INSERT INTO messages (id_expediteur, id_receveur, contenu, date_envoie)
@@ -111,7 +110,7 @@ ORDER BY S.date_service DESC, S.ville ASC
 
 -- Story 17
 
-SELECT S., U.pseudo, U2. 
+SELECT S.*, U.pseudo, U2. 
 FROM services_utilisateurs AS SU 
 LEFT JOIN utilisateurs AS U 
 ON SU.id_utilisateur = U.id 
