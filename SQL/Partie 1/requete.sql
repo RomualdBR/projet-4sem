@@ -1,6 +1,6 @@
 -- Création d'un nouvelle utilisateur Story 3
 
-INSERT INTO utilisateur (email,mot_de_passe,pseudo, date_heure_inscription)
+INSERT INTO utilisateur (email,mot_de_passe,pseudo, date_heure_connexion)
 VALUES ('utilisateur6@gmail.com','motdepasse6','utilisateur6','2002-09-12 23:12:15');
 
 -- mise a jour du mot de passe et du mail Story 4

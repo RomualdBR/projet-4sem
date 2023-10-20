@@ -8,8 +8,8 @@ CREATE TABLE IF NOT EXISTS utilisateur (
     email VARCHAR(50) NOT NULL UNIQUE, 
     mot_de_passe VARCHAR(50) NOT NULL,
     pseudo VARCHAR(50) NOT NULL UNIQUE, 
-    date_heure_inscription DATETIME NOT NULL,
-    date_heure_connexion DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    date_heure_inscription DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    date_heure_connexion DATETIME NOT NULL,
     PRIMARY KEY(id)
 )
 CHARACTER SET 'utf8'

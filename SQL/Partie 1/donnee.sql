@@ -1,6 +1,6 @@
 -- story 2
 
-INSERT INTO utilisateur (email,mot_de_passe,pseudo,date_heure_inscription)
+INSERT INTO utilisateur (email,mot_de_passe,pseudo,date_heure_connexion)
 VALUES  ('utilisateur1@gmail.com','motdepasse1','utilisateur1','2016-09-06 03:45:11'),
         ('utilisateur2@gmail.com','motdepasse2','utilisateur2','2016-09-06 03:45:12'),
         ('utilisateur3@gmail.com','motdepasse3','utilisateur3','2016-09-06 03:45:13'),
