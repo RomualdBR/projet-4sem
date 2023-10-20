@@ -5,9 +5,9 @@ USE the_power_of_memory;
 
 CREATE TABLE IF NOT EXISTS utilisateur ( 
     id INT(11) UNSIGNED NOT NULL AUTO_INCREMENT,
-    email VARCHAR(50) NOT NULL UNIQUE, 
-    mot_de_passe VARCHAR(50) NOT NULL,
-    pseudo VARCHAR(50) NOT NULL UNIQUE, 
+    email VARCHAR(255) NOT NULL UNIQUE, 
+    mot_de_passe VARCHAR(255) NOT NULL,
+    pseudo VARCHAR(100) NOT NULL UNIQUE, 
     date_heure_inscription DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
     date_heure_connexion DATETIME NOT NULL,
     PRIMARY KEY(id)
@@ -17,7 +17,7 @@ ENGINE = INNODB;
 
 CREATE TABLE IF NOT EXISTS jeu (
     id INT(11)UNSIGNED NOT NULL AUTO_INCREMENT ,
-    nom_jeu VARCHAR(50) NOT NULL,
+    nom_jeu VARCHAR(100) NOT NULL,
     PRIMARY KEY(id)
 )
 CHARACTER SET 'utf8'
