@@ -63,7 +63,7 @@ ON S.id = SU.id_service
 LEFT JOIN utilisateurs as U2
 ON U2.id = SU.id_utilisateur
 WHERE S.date_service > NOW()
-AND U2.pseudo IS NULL
+AND U2.pseudo IS NULL 
 ORDER BY S.date_service DESC, S.ville ASC;
 
 --  Story 11 renvoie des info sur l'utilisateur1 et l'utilisateur 2 ainsi que le service qui leurs est commun 
@@ -126,12 +126,12 @@ LIMIT 1;
 
 SELECT M.* ,(SELECT pseudo 
              FROM utilisateurs 
-             WHERE id = 2)
+             WHERE id = 7)
              as pseudo, (SELECT COUNT(S.id)
                          FROM services_utilisateurs AS SU
                          LEFT JOIN services AS S
                          ON SU.id_service = S.id
-                         WHERE M.month = MONTH(S.date_service) AND S.id_utilisateur =2 ) AS nombre_requete
+                         WHERE M.month = MONTH(S.date_service) AND S.id_utilisateur = 7 ) AS nombre_requete
      FROM
          (SELECT 1 as month UNION
           SELECT 2 as month UNION

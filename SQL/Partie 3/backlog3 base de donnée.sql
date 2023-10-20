@@ -538,7 +538,7 @@ ON EA.id_enclot = E.id
 WHERE E.nom = "VonRueden" AND A.sexe = "F" AND YEAR(EA.date_entree) > 4
 ORDER BY A.espece ASC, YEAR(EA.date_entree) DESC;
 
--- Story 14 CHAT GPt
+-- Story 14
 
 SELECT MAX(H.montant) AS Gains, H.date,
         SUM(CASE WHEN A.espece = 'Girafe' THEN 1 ELSE 0 END) AS NombreGirafes,
