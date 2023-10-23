@@ -502,10 +502,13 @@ ORDER BY h.date ASC;
 
 -- Story 10
 
-SELECT YEAR(EA.date_entree) AS years,SUM(EA.id_animal) AS nombre_animal
-FROM enclos_animaux AS EA
+SELECT YEAR(EA.date_entree) AS years,CONCAT(COUNT(A.id)) AS nombre_animal 
+FROM enclos_animaux AS EA 
+LEFT JOIN animaux AS A
+ON EA.id_animal = A.id
 GROUP BY years
-ORDER BY EA.date_entree;
+ORDER BY EA.date_entree; 
+
 
 -- Story 11
 
