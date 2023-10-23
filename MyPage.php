@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-</head>
+
+<?php require_once "Projet/Partials/Head.php" ?>
+
 <body>
     
 </body>
