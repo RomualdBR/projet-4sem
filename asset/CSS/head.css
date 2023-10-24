@@ -1,147 +1,145 @@
-@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Poppins:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Poppins:wght@200;600&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style: none;
+@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Poppins:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Poppins:wght@200;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
 }
 
-
-body{
-    background-color: rgba(16,14,46,255);
-    color: #f5f5f6;
-    font-family: 'Poppins', sans-serif;
+body {
+  background-color: rgba(16, 14, 46, 255);
+  color: #f5f5f6;
+  font-family: "Poppins", sans-serif;
 }
-a{
-    align-items: center;
-}
-
-li a:hover{
-    color: #ec9123;
+a {
+  align-items: center;
 }
 
-.present{
-    height: 75px;
+li a:hover {
+  color: #ec9123;
 }
 
-header{
-    height: 100vh;
-    width:100vw;
-    background-image:url("../images/esport.png");
-    background-size: cover;
-    background-color: #100e2e;
-    
-}
-header{
-    background: rgba(16, 14, 46, 0.263) url("../images/esport.png");
-    background-size: cover;
-}
-.head{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-.head h1{
-    font-weight: 900;
-    font-size: 70px;
-}
-.head p{
-    font-size: 20px;
-}
-.head .button{
-    padding: 15px 25px;
-    border: none;
-    border-radius: 5px;
-    font-size: 15px;
-    font-weight: bold;
-    color: white;
-    background-color: #ec9123;
-    outline: none;
-    cursor: pointer;
-}
-.main-nav{
-    position: absolute;
-    padding: 50px;
-    padding-top: 0px;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    box-sizing: border-box;
-    align-items: center;
+.present {
+  height: 75px;
 }
 
-.main-nav a{
-    color: white;
-    font-weight: bold;
+header {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../images/esport.png");
+  background-size: cover;
+  background-color: #100e2e;
+}
+header {
+  background: rgba(16, 14, 46, 0.263) url("../images/esport.png");
+  background-size: cover;
+}
+.head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.head h1 {
+  font-weight: 900;
+  font-size: 70px;
+}
+.head p {
+  font-size: 20px;
+}
+.head .button {
+  padding: 15px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  background-color: #ec9123;
+  outline: none;
+  cursor: pointer;
+}
+.main-nav {
+  position: absolute;
+  padding: 50px;
+  padding-top: 0px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+  align-items: center;
 }
 
-.main-nav .name{
-    font-size: 1em;
-    font-weight: bold;
+.main-nav a {
+  color: white;
+  font-weight: bold;
 }
 
-.photo_de_profil_myaccount_nav{
-    margin-top: 1vh;
-    width: 3.5vw;
+.main-nav .name {
+  font-size: 1em;
+  font-weight: bold;
 }
 
-.main-nav .nav-links ul{
-    display: flex;
-    text-align: center;
+.photo_de_profil_myaccount_nav {
+  margin-top: 1vh;
+  width: 3.5vw;
 }
-.main-nav .nav-links ul li{
-    margin: 0 25px ;
-    display: inline-block; /* Ajouter cette ligne pour éviter que les liens occupent toute la largeur */
-    line-height: 75px; /* La même hauteur que l'élément parent */
+
+.main-nav .nav-links ul {
+  display: flex;
+  text-align: center;
 }
-.main-nav .nav-links ul li.present a{
-    color: #ec9123; 
+.main-nav .nav-links ul li {
+  margin: 0 25px;
+  display: inline-block; /* Ajouter cette ligne pour éviter que les liens occupent toute la largeur */
+  line-height: 75px; /* La même hauteur que l'élément parent */
 }
-.main-nav .nav-links ul li.present{
-    border-top: solid;
-    border-top-color: #ec9123;
-    border-width: 5px 0px;
+.main-nav .nav-links ul li.present a {
+  color: #ec9123;
+}
+.main-nav .nav-links ul li.present {
+  border-top: solid;
+  border-top-color: #ec9123;
+  border-width: 5px 0px;
 }
 
 /*NAVIGATION DES AUTRE PAGE*/
 
-.nav-other{
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 0px;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    box-sizing: border-box;
-    align-items: center;
+.nav-other {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 0px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+  align-items: center;
 }
-.nav-other a{
-    color: white;
-    font-weight: bold;
-}
-
-.nav-other .name{
-    font-size: 1em;
-    font-weight: bold;
+.nav-other a {
+  color: white;
+  font-weight: bold;
 }
 
-.nav-other .nav-links ul{
-    display: flex;
-    text-align: center;
+.nav-other .name {
+  font-size: 1em;
+  font-weight: bold;
 }
-.nav-other .nav-links ul li{
-    margin: 0 25px ;
-    display: inline-block; /* Ajouter cette ligne pour éviter que les liens occupent toute la largeur */
-    line-height: 75px; /* La même hauteur que l'élément parent */
+
+.nav-other .nav-links ul {
+  display: flex;
+  text-align: center;
 }
-.nav-other .nav-links ul li.present a{
-    color: #ec9123; 
+.nav-other .nav-links ul li {
+  margin: 0 25px;
+  display: inline-block; /* Ajouter cette ligne pour éviter que les liens occupent toute la largeur */
+  line-height: 75px; /* La même hauteur que l'élément parent */
 }
-.nav-other .nav-links ul li.present{
-    border-top: solid;
-    border-top-color: #ec9123;
-    border-width: 5px 0px;
+.nav-other .nav-links ul li.present a {
+  color: #ec9123;
+}
+.nav-other .nav-links ul li.present {
+  border-top: solid;
+  border-top-color: #ec9123;
+  border-width: 5px 0px;
 }
