@@ -2,26 +2,26 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-<?php require_once SITE_ROOT."Projet/Partials/Head.php" ?>
+<?php require_once SITE_ROOT . "Projet/Partials/Head.php" ?>
 
 <body>
     <!-- Partie de Benilde-->
 
     <?php
-    $a=1
+    $a = 1
     ?>
-    <?php require_once SITE_ROOT. "Projet/Partials/Header.php"; ?>
+    <?php require_once SITE_ROOT . "Projet/Partials/Header.php"; ?>
 
     <header class="head">
         <h1>BIENVENUE DANS <br> NOTRE STUDIO!</h1>
-        <p>  venez challenger les cerveaux les plus agiles!</p>
+        <p> venez challenger les cerveaux les plus agiles!</p>
         <br>
         <a href="Games/Memory/memory.php" class="button">Jouer!</a>
     </header>
 
     <!--fin de la partie de Benilde-->
 
-    
+
     <!--Partie de Romuald-->
     <section class="main_haut">
         <div class="image_haut">
@@ -34,32 +34,43 @@
                 <h1>01</h1>
             </div>
             <div class="texte">
-                <p> <h1 class="titre_description">Lorem ipsum </h1>dolor, sit amet consectetur adipisicing elit. Perferendis, harum labore! Obcaecati itaque deleniti dolor distinctio eligendi eum omnis assumenda exercitationem odio corporis! Temporibus doloribus natus ipsum a consectetur magnam?</p>
+                <p>
+                <h1 class="titre_description">Lorem ipsum </h1>dolor, sit amet consectetur adipisicing elit. Perferendis, harum labore! Obcaecati itaque deleniti dolor distinctio eligendi eum omnis assumenda exercitationem odio corporis! Temporibus doloribus natus ipsum a consectetur magnam?</p>
             </div>
             <div class="numero">
                 <h1>02</h1>
             </div>
             <div class="texte">
-                <p> <h1 class="titre_description">Lorem ipsum </h1>dolor, sit amet consectetur adipisicing elit. Perferendis, harum labore! Obcaecati itaque deleniti dolor distinctio eligendi eum omnis assumenda exercitationem odio corporis! Temporibus doloribus natus ipsum a consectetur magnam?</p>
+                <p>
+                <h1 class="titre_description">Lorem ipsum </h1>dolor, sit amet consectetur adipisicing elit. Perferendis, harum labore! Obcaecati itaque deleniti dolor distinctio eligendi eum omnis assumenda exercitationem odio corporis! Temporibus doloribus natus ipsum a consectetur magnam?</p>
             </div>
             <div class="numero">
                 <h1>03</h1>
             </div>
             <div class="texte">
-                <p> <h1 class="titre_description">Lorem ipsum </h1>dolor, sit amet consectetur adipisicing elit. Perferendis, harum labore! Obcaecati itaque deleniti dolor distinctio eligendi eum omnis assumenda exercitationem odio corporis! Temporibus doloribus natus ipsum a consectetur magnam?</p>
+                <p>
+                <h1 class="titre_description">Lorem ipsum </h1>dolor, sit amet consectetur adipisicing elit. Perferendis, harum labore! Obcaecati itaque deleniti dolor distinctio eligendi eum omnis assumenda exercitationem odio corporis! Temporibus doloribus natus ipsum a consectetur magnam?</p>
             </div>
         </div>
     </section>
     <section class="main_milieu">
-            <div>
-                <img src="<?= PROJECT_FOLDER ?>asset/images/watch_dogs.png" alt="watch_dog" class="watch_dog">
-            </div>
-            <div class="stats_dogs">
-                <span class="obj1"><p class="bold">310 <br> parties jouées</p></span>
-                <span class="obj2"><p class="bold">1020 <br> Joueurs Connectés</p></span>
-                <span class="obj3"><p class="bold">10 <br> sec Temps Record</p></span>
-                <span class="obj4"><p class="bold">21 <br> 300 Joueurs Inscrits</p></span>
-            </div>   
+        <div>
+            <img src="<?= PROJECT_FOLDER ?>asset/images/watch_dogs.png" alt="watch_dog" class="watch_dog">
+        </div>
+        <div class="stats_dogs">
+            <span class="obj1">
+                <p class="bold">310 <br> parties jouées</p>
+            </span>
+            <span class="obj2">
+                <p class="bold">1020 <br> Joueurs Connectés</p>
+            </span>
+            <span class="obj3">
+                <p class="bold">10 <br> sec Temps Record</p>
+            </span>
+            <span class="obj4">
+                <p class="bold">21 <br> 300 Joueurs Inscrits</p>
+            </span>
+        </div>
     </section>
     <section class="page_bas">
         <div class="titre_equipe">
@@ -100,10 +111,11 @@
             </div>
         </div>
     </section>
-        <!--Fin de la partie de Romuald-->
+    <!--Fin de la partie de Romuald-->
 
     <!-- Footer -->
-     <?php require_once SITE_ROOT. "Projet/Partials/Footer.php" ?>
-     
+    <?php require_once SITE_ROOT . "Projet/Partials/Footer.php" ?>
+
 </body>
+
 </html>

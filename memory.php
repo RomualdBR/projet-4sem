@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <title>The Power of Memory</title>
@@ -7,41 +8,42 @@
     <link rel="stylesheet" href="asset/CSS/head.css">
     <link rel="stylesheet" href="asset/CSS/main.css">
 </head>
+
 <body>
-    
+
     <!--Header-->
 
     <nav class="nav-other">
         <a href="#" class="name">The Power of Memory</a>
         <div class="nav-links">
-             <ul>
+            <ul>
                 <li><a href="index.html">ACCUEIL</a></li>
                 <li class="present"><a href="memory.html">JEU</a></li>
-                <li><a href="Score.html">SCORES</a></li>               
+                <li><a href="Score.html">SCORES</a></li>
                 <li><a href="contact.html">NOUS CONTACTER</a></li>
-                <li ><a href="login.html">SE CONNECTER</a></li>
+                <li><a href="login.html">SE CONNECTER</a></li>
                 <li><a href="register.html">S'INSCRIRE</a></li>
                 <li><a href="MyAccount.html"><img src="asset/images/photo_de_profil_MyAccount.png" alt="Photo_de_profil" class="photo_de_profil_myaccount_nav"></a></li>
             </ul>
-        </div>     
-     </nav>
+        </div>
+    </nav>
 
     <!--Fin header-->
 
     <!--Main-->
 
-     <section class="banniere">
+    <section class="banniere">
         <p>Jeux</p>
-     </section>
+    </section>
 
-     <section class="jeu">
+    <section class="jeu">
         <h2 class="titre_jeux">Tous les jeux :</h2>
         <div class="selection_jeux">
             <button> <a href="memory_level.html"><img src="asset/images/memoryimage.png" alt="" class="image_nav"></a></button>
             <button><img src="asset/images/tictactoe.png" alt="tictactoe" class="image_nav"></button>
             <button><img src="asset/images/solitaire.pnj.jpeg" alt="solitaire" class="image_nav"></button>
         </div>
-     </section>
+    </section>
 
     <!--Fin main-->
     <!--Footer-->
@@ -61,10 +63,10 @@
                 <span><span class="bold orange">Localisation :</span> Paris</span>
                 <br>
                 <a href="https://facebook.com"><img src="asset/images/facebook2.png" alt="facebook"></a>
-                <a href="https://twitter.com"><img src="asset/images/tweeter2.png" alt="tweeter"></a> 
-                <a href="https://google.com"><img src="asset/images/google2.png" alt="google"></a> 
-                <a href="https://pinterest.com"><img src="asset/images/pinterest2.png" alt="pinterest"></a> 
-                <a href="https://instagram.com"><img src="asset/images/instagram2.png" alt="instagram"></a> 
+                <a href="https://twitter.com"><img src="asset/images/tweeter2.png" alt="tweeter"></a>
+                <a href="https://google.com"><img src="asset/images/google2.png" alt="google"></a>
+                <a href="https://pinterest.com"><img src="asset/images/pinterest2.png" alt="pinterest"></a>
+                <a href="https://instagram.com"><img src="asset/images/instagram2.png" alt="instagram"></a>
                 <br><br><br>
                 <div class="Copyright">
                     <span>Copyright © 2022 Tous droits réservés</span>
@@ -85,4 +87,5 @@
     <!--Fin footer-->
 
 </body>
+
 </html>

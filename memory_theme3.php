@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <title>The Power of Memory</title>
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="asset/CSS/head.css">
     <link rel="stylesheet" href="asset/CSS/main.css">
 </head>
+
 <body>
     <!--Header-->
 
@@ -154,8 +156,9 @@
                     <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
                     <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
                     <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
-                    <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td> 
-                    <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>                   <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece"class="image_jeu_theme1_12x12"></td>
+                    <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
+                    <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
+                    <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
                 </tr>
                 <tr class="ligne12x12">
                     <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
@@ -168,8 +171,9 @@
                     <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
                     <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
                     <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
-                    <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td> 
-                    <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>                   <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece"class="image_jeu_theme1_12x12"></td>
+                    <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
+                    <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
+                    <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
                 </tr>
                 <tr class="ligne12x12">
                     <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
@@ -182,8 +186,9 @@
                     <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
                     <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
                     <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
-                    <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td> 
-                    <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>                   <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece"class="image_jeu_theme1_12x12"></td>
+                    <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
+                    <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
+                    <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
                 </tr>
                 <tr class="ligne12x12">
                     <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
@@ -196,8 +201,9 @@
                     <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
                     <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
                     <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
-                    <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td> 
-                    <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>                   <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece"class="image_jeu_theme1_12x12"></td>
+                    <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
+                    <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
+                    <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
                 </tr>
                 <tr class="ligne12x12">
                     <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
@@ -210,8 +216,9 @@
                     <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
                     <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
                     <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
-                    <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td> 
-                    <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>                   <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece"class="image_jeu_theme1_12x12"></td>
+                    <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
+                    <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
+                    <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
                 </tr>
                 <tr class="ligne12x12">
                     <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
@@ -224,8 +231,9 @@
                     <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
                     <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
                     <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
-                    <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td> 
-                    <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>                   <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece"class="image_jeu_theme1_12x12"></td>
+                    <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
+                    <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
+                    <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
                 </tr>
                 <tr class="ligne12x12">
                     <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
@@ -238,8 +246,9 @@
                     <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
                     <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
                     <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
-                    <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td> 
-                    <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>                   <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece"class="image_jeu_theme1_12x12"></td>
+                    <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
+                    <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
+                    <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
                 </tr>
                 <tr class="ligne12x12">
                     <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
@@ -252,8 +261,9 @@
                     <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
                     <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
                     <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
-                    <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td> 
-                    <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>                   <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece"class="image_jeu_theme1_12x12"></td>
+                    <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
+                    <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
+                    <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
                 </tr>
                 <tr class="ligne12x12">
                     <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
@@ -266,8 +276,9 @@
                     <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
                     <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
                     <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
-                    <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td> 
-                    <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>                   <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece"class="image_jeu_theme1_12x12"></td>
+                    <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
+                    <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
+                    <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
                 </tr>
                 <tr class="ligne12x12">
                     <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
@@ -280,8 +291,9 @@
                     <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
                     <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
                     <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
-                    <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td> 
-                    <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>                   <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece"class="image_jeu_theme1_12x12"></td>
+                    <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
+                    <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
+                    <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
                 </tr>
                 <tr class="ligne12x12">
                     <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
@@ -294,8 +306,9 @@
                     <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
                     <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
                     <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
-                    <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td> 
-                    <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>                   <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece"class="image_jeu_theme1_12x12"></td>
+                    <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
+                    <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
+                    <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
                 </tr>
                 <tr class="ligne12x12">
                     <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
@@ -308,10 +321,11 @@
                     <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
                     <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
                     <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
-                    <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td> 
-                    <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>                   <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece"class="image_jeu_theme1_12x12"></td>
+                    <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
+                    <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
+                    <td class="colone12x12"> <img src="asset/images/lolcarte.png" alt="one piece" class="image_jeu_theme1_12x12"></td>
                 </tr>
-                
+
             </table>
         </div>
     </section>
@@ -323,4 +337,5 @@
 
     <!--Fin footer-->
 </body>
+
 </html>
