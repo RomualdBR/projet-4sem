@@ -28,9 +28,10 @@ CREATE TABLE IF NOT EXISTS score (
     difficulte VARCHAR(15) NOT NULL, 
     score INT(11) NOT NULL, 
     date_heure_partie DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    temps_partie INT(20) NOT NULL,
     PRIMARY KEY (id),
-    CONSTRAINT fk_score_utilisateur FOREIGN KEY (id_joueur) REFERENCES utilisateur(id) ON DELETE SET NULL UPDATE,
-    CONSTRAINT fk_score_jeu FOREIGN KEY (id_jeu) REFERENCES jeu(id) ON DELETE SET NULL UPDATE
+    CONSTRAINT fk_score_utilisateur FOREIGN KEY (id_joueur) REFERENCES utilisateur(id) ON DELETE SET NULL ,
+    CONSTRAINT fk_score_jeu FOREIGN KEY (id_jeu) REFERENCES jeu(id) ON DELETE SET NULL 
 )
 CHARACTER SET 'utf8'
 ENGINE = INNODB;
@@ -58,17 +59,17 @@ VALUES  ('utilisateur1@gmail.com','motdepasse1','utilisateur1','2016-09-06 03:45
 INSERT INTO jeu (nom_jeu)
 VALUES ('The Power Of Memory');
 
-INSERT INTO score (id_joueur,id_jeu,difficulte,score)
-VALUES  (1,1,'Difficile',425),
-        (2,1,'Normal',3671),
-        (3,1,'Facile',280),
-        (5,1,'Difficile',6765),
-        (5,1,'Normal',1092),
-        (1,1,'Difficile',2919),
-        (2,1,'Facile',389),
-        (3,1,'Normal',985),
-        (4,1,'Difficile',927),
-        (5,1,'Facile',655);
+INSERT INTO score (id_joueur,id_jeu,difficulte,score,temps_partie)
+VALUES  (1,1,'Difficile',425,20),
+        (2,1,'Normal',3671,39),
+        (3,1,'Facile',280,22),
+        (5,1,'Difficile',6765,50),
+        (5,1,'Normal',1092,32),
+        (1,1,'Difficile',2919,31),
+        (2,1,'Facile',389,15),
+        (3,1,'Normal',985,40),
+        (4,1,'Difficile',927,60),
+        (5,1,'Facile',655,33);
 
 INSERT INTO messages(id_jeu,id_expediteur,texte_message)
 VALUES  (1,1,'Bonsoir'),

@@ -1,12 +1,12 @@
 <?php
-function connectToDbAndGetPdo(): void
+function connectToDbAndGetPdo(): PDO
 {
     $dbname = 'the_power_of_memory';
     $host = 'localhost';
 
     $dsn = "mysql:dbname=$dbname;host=$host;charset=utf8";
     $user = 'root';
-    $pass = 'root';
+    $pass = '';
 
     $driver_options = [
         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,

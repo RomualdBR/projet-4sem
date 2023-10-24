@@ -1,3 +1,4 @@
+<?php require_once "Projet/Utils/database.php" ?>
 <?php require_once "Projet/Utils/common.php" ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -16,7 +17,7 @@
         <h1>BIENVENUE DANS <br> NOTRE STUDIO!</h1>
         <p> venez challenger les cerveaux les plus agiles!</p>
         <br>
-        <a href="Games/Memory/memory.php" class="button">Jouer!</a>
+        <a href="<?= PROJECT_FOLDER ?>Projet/Games/Memory/memory.php" class="button">Jouer!</a>
     </header>
 
     <!--fin de la partie de Benilde-->
@@ -59,16 +60,16 @@
         </div>
         <div class="stats_dogs">
             <span class="obj1">
-                <p class="bold">310 <br> parties jouées</p>
+                <p class="bold"><?php echo displayNbPartie() ?><br> parties jouées</p>
             </span>
             <span class="obj2">
                 <p class="bold">1020 <br> Joueurs Connectés</p>
             </span>
             <span class="obj3">
-                <p class="bold">10 <br> sec Temps Record</p>
+                <p class="bold"> <?php echo displayTempsPartie() ?> <br> sec Temps Record</p>
             </span>
             <span class="obj4">
-                <p class="bold">21 <br> 300 Joueurs Inscrits</p>
+                <p class="bold"><?php echo displayNbJoueurs() ?><br>Joueurs Inscrits</p>
             </span>
         </div>
     </section>
