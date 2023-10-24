@@ -10,6 +10,9 @@
 </head>
 
 <body>
+    <?php
+    $c = 1
+    ?>
     <nav class="nav-other">
         <a href="#" class="name">The Power of Memory</a>
         <div class="nav-links">

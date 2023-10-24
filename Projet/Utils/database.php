@@ -1,5 +1,5 @@
 <?php
-function connectToDbAndGetPdo(): void
+function connectToDbAndGetPdo(): PDO
 {
     $dbname = 'the_power_of_memory';
     $host = 'localhost';
