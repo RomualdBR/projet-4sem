@@ -3,15 +3,15 @@
 <html lang="fr">
 
 <?php
-     $a="0"
+$a = "0"
 ?>
-<?php require_once SITE_ROOT. "Projet/Partials/Head.php" ?>
+<?php require_once SITE_ROOT . "Projet/Partials/Head.php" ?>
 
 <body>
 
     <!--Header-->
 
-    <?php require_once SITE_ROOT. "Projet/Partials/Header.php"; ?> 
+    <?php require_once SITE_ROOT . "Projet/Partials/Header.php"; ?>
 
     <!--Fin header-->
 
@@ -23,11 +23,11 @@
                 <p class="pseudo">Nom Utilisateur</p>
             </div>
             <div class="caracteristique_utilisateur">
-                    <h3 class="info_utilisateur">Information utilisateur :</h3>
-                    <p class="info_utilisateur1"> <span class="bold">Nom, prenom : </span>BRISACIER Romuald</p>
-                    <p class="info_utilisateur2"> <span class="bold">Date de naissace : </span>JJ/MM/AA</p>
-                    <p class="info_utilisateur3"> <span class="bold">Email : </span>monemail@gmail.com</p>
-                    <p class="info_utilisateur4"><span class="bold">score : </span> 18 363</p>
+                <h3 class="info_utilisateur">Information utilisateur :</h3>
+                <p class="info_utilisateur1"> <span class="bold">Nom, prenom : </span>BRISACIER Romuald</p>
+                <p class="info_utilisateur2"> <span class="bold">Date de naissace : </span>JJ/MM/AA</p>
+                <p class="info_utilisateur3"> <span class="bold">Email : </span>monemail@gmail.com</p>
+                <p class="info_utilisateur4"><span class="bold">score : </span> 18 363</p>
             </div>
             <div class="description_utilisateur">
                 <h3 class="bold">A propos de vous :</h3>
@@ -66,10 +66,11 @@
 
     <!--Footer-->
 
-   
-    <?php require_once SITE_ROOT. "Projet/Partials/Footer.php" ?>
-    
+
+    <?php require_once SITE_ROOT . "Projet/Partials/Footer.php" ?>
+
     <!--Fin footer-->
 
 </body>
+
 </html>

@@ -4,6 +4,7 @@
 <?php require_once "Projet/Partials/Head.php" ?>
 
 <body>
-    
+
 </body>
+
 </html>

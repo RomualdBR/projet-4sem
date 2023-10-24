@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <title>The Power of Memory</title>
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="asset/CSS/head.css">
     <link rel="stylesheet" href="asset/CSS/main.css">
 </head>
+
 <body>
 
     <!--Header-->
@@ -20,7 +22,7 @@
             </div>
             <p class="titre_site">The Power of Memory</p>
         </div>
-     </nav>
+    </nav>
 
     <!--Fin header-->
     <!--Main-->
@@ -64,10 +66,10 @@
                 <span><span class="bold orange">Localisation :</span> Paris</span>
                 <br>
                 <a href="https://facebook.com"><img src="asset/images/facebook2.png" alt="facebook"></a>
-                <a href="https://twitter.com"><img src="asset/images/tweeter2.png" alt="tweeter"></a> 
-                <a href="https://google.com"><img src="asset/images/google2.png" alt="google"></a> 
-                <a href="https://pinterest.com"><img src="asset/images/pinterest2.png" alt="pinterest"></a> 
-                <a href="https://instagram.com"><img src="asset/images/instagram2.png" alt="instagram"></a> 
+                <a href="https://twitter.com"><img src="asset/images/tweeter2.png" alt="tweeter"></a>
+                <a href="https://google.com"><img src="asset/images/google2.png" alt="google"></a>
+                <a href="https://pinterest.com"><img src="asset/images/pinterest2.png" alt="pinterest"></a>
+                <a href="https://instagram.com"><img src="asset/images/instagram2.png" alt="instagram"></a>
                 <br><br><br>
                 <div class="Copyright">
                     <span>Copyright © 2022 Tous droits réservés</span>
@@ -86,6 +88,7 @@
     </footer>
 
     <!--Fin footer-->
-    
+
 </body>
+
 </html>
