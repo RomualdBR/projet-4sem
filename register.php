@@ -7,9 +7,6 @@
 <body>
     <!--Header-->
 
-    <?php
-    $a = "0"
-    ?>
     <?php require_once SITE_ROOT . "Projet/Partials/Header.php"; ?>
 
     <!--Fin header-->

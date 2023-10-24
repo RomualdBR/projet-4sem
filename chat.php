@@ -3,9 +3,6 @@
 <html lang="fr">
 
 <head>
-    <?php
-    $a = "0"
-    ?>
     <?php require_once SITE_ROOT . "Projet/Partials/Head.php" ?>
 
 </head>

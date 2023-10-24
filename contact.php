@@ -5,13 +5,7 @@
 <?php require_once SITE_ROOT . "Projet/Partials/Head.php" ?>
 
 <body>
-    <?php
-    $d = 1
-    ?>
     <!--Header-->
-    <?php
-    $a = "0"
-    ?>
     <?php require_once SITE_ROOT . "Projet/Partials/Header.php"; ?>
 
     <!--Fin Header-->

@@ -1,5 +1,9 @@
+<?php require_once "Projet/Utils/common.php"; ?>
+<?php require_once "Projet/Utils/database.php" ?>
+
+?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -10,9 +14,6 @@
 </head>
 
 <body>
-    <?php
-    $c = 1
-    ?>
     <nav class="nav-other">
         <a href="#" class="name">The Power of Memory</a>
         <div class="nav-links">

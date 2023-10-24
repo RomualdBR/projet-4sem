@@ -1,6 +1,6 @@
 <?php $current_page = basename($_SERVER['PHP_SELF']); ?>
 
-<?php if ($a == 1) : ?>
+<?php if ($current_page == 'index.php') : ?>
 
 
     <nav class="main-nav">
