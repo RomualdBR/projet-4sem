@@ -52,7 +52,7 @@ function displayNbJoueurs(): int
 };
 
 
-function recuperescore() : array
+function recuperescore(): array
 {
     $pdo = connectToDbAndGetPdo();
     $pdoStatement = $pdo->prepare('SELECT J.nom_jeu, U.pseudo, S.difficulte, S.score, (
@@ -74,7 +74,7 @@ function recuperescore() : array
     return $scores;
 }
 
-function recherchescore (string $recherche): array
+function recherchescore(string $recherche): array
 {
     $pdo = connectToDbAndGetPdo();
     $pdoStatement = $pdo->prepare('SELECT J.nom_jeu, U.pseudo, S.difficulte, S.score, (
@@ -91,8 +91,27 @@ function recherchescore (string $recherche): array
     INNER JOIN jeu AS J
     ON S.id_jeu = J.id
     WHERE U.pseudo LIKE :player ;');
-    $pdoStatement->execute([":player" => "%". $recherche ."%"]);
-    $result = $pdoStatement->fetchAll();
-    
-    return $result;
+    $pdoStatement->execute([":player" => "%" . $recherche . "%"]);
+    $cherchescore = $pdoStatement->fetchAll();
+
+    return $cherchescore;
+}
+
+function verificationconnexion(string $verifpseudo, string $verifmotdepasse): bool
+{
+    $pdo = connectToDbAndGetPdo();
+    $pdoStatement = $pdo->prepare('SELECT pseudo, mot_de_passe
+    FROM utilisateur
+    WHERE pseudo = :pseudo AND mot_de_passe = :motdepasse;');
+    $pdoStatement->execute([
+        ":pseudo" => $verifpseudo,
+        ":motdepasse" => $verifmotdepasse
+    ]);
+    $verifconnexion = $pdoStatement->fetch();
+
+    if(!$verifconnexion) {
+        return false;
+    }
+
+    return true;
 }

@@ -20,7 +20,7 @@ require_once "../../Utils/common.php";
     <section>
         <form>
             <label class="ensemble_barre_recherche">
-                <input type="text" class="texte_recherche" name="cook">
+                <input type="text" class="texte_recherche" name="query">
                 <button class="e"> <img src="<?php echo PROJECT_FOLDER; ?>asset/images/loupe.png" class="img_loope"></button>
             </label>
         </form>
@@ -38,8 +38,8 @@ require_once "../../Utils/common.php";
 
             </thead>
             <tbody class="bas-scores">
-                <?php if (isset($_GET['cook'])) :
-                    foreach (recherchescore($_GET['cook']) as $score) :
+                <?php if (isset($_GET['query'])) :
+                    foreach (recherchescore($_GET['query']) as $score) :
                 ?>
 
                         <?php if ($score->pseudo == "utilisateur1") : ?>
@@ -90,7 +90,6 @@ require_once "../../Utils/common.php";
                 <?php endif;
                     endforeach;
                 endif; ?>
-
             </tbody>
         </table>
     </section>
