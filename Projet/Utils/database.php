@@ -52,7 +52,7 @@ function displayNbJoueurs(): int
 };
 
 
-function recuperescore()
+function recuperescore(): array
 {
     $pdo = connectToDbAndGetPdo();
     $pdoStatement = $pdo->prepare('SELECT J.nom_jeu, U.pseudo, S.difficulte, S.score, (
@@ -68,18 +68,51 @@ function recuperescore()
     ON S.id_joueur = U.id
     INNER JOIN jeu AS J
     ON S.id_jeu = J.id
-    WHERE J.nom_jeu = "The Power Of Memory" OR U.id = "utilisateur6" OR S.difficulte = "Difficile"
     ORDER BY J.nom_jeu ASC,nb_difficulte DESC, S.score ASC;');
     $pdoStatement->execute();
     $scores = $pdoStatement->fetchAll();
     return $scores;
+};
 
-    foreach ($scores as $score) {
-        echo $score->nom_jeu;
-        echo $score->pseudo;
-        echo $score->difficulte;
-        echo $score->score;
+function recherchescore(string $recherche): array
+{
+    $pdo = connectToDbAndGetPdo();
+    $pdoStatement = $pdo->prepare('SELECT J.nom_jeu, U.pseudo, S.difficulte, S.score, (
+        SELECT 
+        CASE
+        WHEN S.difficulte = "Difficile" THEN 3
+        WHEN S.difficulte = "Normal" THEN 2
+        WHEN S.difficulte = "Facile" THEN 1
+        END
+    ) AS nb_difficulte
+    FROM score AS S
+    INNER JOIN utilisateur AS U
+    ON S.id_joueur = U.id
+    INNER JOIN jeu AS J
+    ON S.id_jeu = J.id
+    WHERE U.pseudo LIKE :player ;');
+    $pdoStatement->execute([":player" => "%" . $recherche . "%"]);
+    $cherchescore = $pdoStatement->fetchAll();
+
+    return $cherchescore;
+};
+
+function verificationconnexion(string $verifpseudo, string $verifmotdepasse): bool
+{
+    $pdo = connectToDbAndGetPdo();
+    $pdoStatement = $pdo->prepare('SELECT pseudo, mot_de_passe
+    FROM utilisateur
+    WHERE pseudo = :pseudo AND mot_de_passe = :motdepasse;');
+    $pdoStatement->execute([
+        ":pseudo" => $verifpseudo,
+        ":motdepasse" => $verifmotdepasse
+    ]);
+    $verifconnexion = $pdoStatement->fetch();
+
+    if(!$verifconnexion) {
+        return false;
     }
+    return true;
 };
 
 function verifMdp(string $MDP): bool
@@ -100,3 +133,4 @@ function verifEmail(string $Email): bool
 {
     return filter_var($Email, FILTER_VALIDATE_EMAIL);
 };
+
