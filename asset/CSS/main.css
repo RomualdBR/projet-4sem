@@ -359,6 +359,40 @@ html{
     padding: 20px;
     background-color: #341fa1;
 }
+
+.ensemble_barre_recherche{
+    display: flex;
+    margin-top: 5vh;
+    justify-content:center;
+}
+.texte_recherche:focus{
+    outline: none;
+}
+.texte_recherche{
+    width: 20vw;
+    height: 5vh;
+    padding-left: 1vw;
+    border-radius: 10vw;
+    background-color: #272647;
+    border: none;
+    padding-right: 4vw;
+    color: white;
+}
+
+.e{
+    border-radius: 50%;
+    display: flex;
+    position: absolute;
+    margin-left: 22.5%;
+    border: none;
+}
+
+.img_loope{
+    height: 5vh;
+    width: auto;
+}
+
+
 .tableau-scores{
     background-color: #272647;
     text-align: center;
