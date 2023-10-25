@@ -1,6 +1,7 @@
 <?php
- require_once "../../Utils/common.php";
- require_once "../../Utils/database.php";
+
+require_once "../../Utils/database.php";
+require_once "../../Utils/common.php";
 
 ?>
 <!DOCTYPE html>
@@ -29,18 +30,27 @@
             </thead>
             <tbody class="bas-scores">
                 <?php foreach (recuperescore() as $score): ?>
-
-                    <tr>
-                        <td><?= $score -> nom_jeu?></td>
-                        <td class="pseudo-scores">
-                            <img src="<?= PROJECT_FOLDER ?>/asset/images/benilde.png" alt="" class="image-score">
-                            <p class="pseudo-rank"><a href="#" class="pseudo-click"><?= $score->pseudo ?></a></p>
-                        </td>
-                        <td><?= $score -> difficulte ?></td>
-                        <td><?= $score -> score ?></td>
-                    </tr>
-
-                <?php endforeach; ?>
+                    <?php if ($score -> pseudo == "utilisateur1") : ?>
+                        <tr>
+                            <td style="color: orange;"><?= $score -> nom_jeu?> </td>
+                            <td class="pseudo-scores">
+                                <img src="<?= PROJECT_FOLDER ?>/asset/images/benilde.png" alt="" class="image-score">
+                                <p  class="pseudo-rank"><a style="color: orange;" href="#" class="pseudo-click"><?= $score->pseudo?></a></p>
+                            </td>
+                            <td style="color: orange;"><?= $score -> difficulte ?></td>
+                            <td style="color: orange;"><?= $score -> score ?></td>
+                        </tr>
+                    <?php else : ?>
+                        <tr>
+                            <td><?= $score -> nom_jeu?></td>
+                            <td class="pseudo-scores" >
+                                <img src="<?= PROJECT_FOLDER ?>/asset/images/benilde.png" alt="" class="image-score">
+                                <p class="pseudo-rank"><a href="#" class="pseudo-click"><?= $score->pseudo?></a></p>
+                            </td>
+                            <td><?= $score -> difficulte ?></td>
+                            <td><?= $score -> score ?></td>
+                        </tr>
+                <?php endif; endforeach; ?>
 
             </tbody>
         </table>
@@ -50,5 +60,4 @@
     <?php require_once SITE_ROOT . "Projet/Partials/Footer.php" ?>
 
 </body>
-
 </html>
