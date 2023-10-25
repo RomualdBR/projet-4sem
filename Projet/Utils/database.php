@@ -80,4 +80,23 @@ function recuperescore()
         echo $score->difficulte;
         echo $score->score;
     }
-}
+};
+
+function verifMdp(string $MDP): bool
+{
+    $passwordPattern = '/^(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*]).{8,}$/';
+    return preg_match($passwordPattern, $MDP);
+
+};
+
+function verifPseudo(string $Pseudo): bool
+{
+    $PseudoPattern = '/^.{4,}$/';
+    return preg_match($PseudoPattern, $Pseudo);
+    
+};
+
+function verifEmail(string $Email): bool 
+{
+    return filter_var($Email, FILTER_VALIDATE_EMAIL);
+};

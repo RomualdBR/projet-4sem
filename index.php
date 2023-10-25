@@ -8,9 +8,6 @@
 <body>
     <!-- Partie de Benilde-->
 
-    <?php
-    $a = 1
-    ?>
     <?php require_once SITE_ROOT . "Projet/Partials/Header.php"; ?>
 
     <header class="head">
