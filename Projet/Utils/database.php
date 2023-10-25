@@ -72,7 +72,7 @@ function recuperescore(): array
     $pdoStatement->execute();
     $scores = $pdoStatement->fetchAll();
     return $scores;
-}
+};
 
 function recherchescore(string $recherche): array
 {
@@ -95,7 +95,7 @@ function recherchescore(string $recherche): array
     $cherchescore = $pdoStatement->fetchAll();
 
     return $cherchescore;
-}
+};
 
 function verificationconnexion(string $verifpseudo, string $verifmotdepasse): bool
 {
@@ -112,6 +112,25 @@ function verificationconnexion(string $verifpseudo, string $verifmotdepasse): bo
     if(!$verifconnexion) {
         return false;
     }
-
     return true;
-}
+};
+
+function verifMdp(string $MDP): bool
+{
+    $passwordPattern = '/^(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*]).{8,}$/';
+    return preg_match($passwordPattern, $MDP);
+
+};
+
+function verifPseudo(string $Pseudo): bool
+{
+    $PseudoPattern = '/^.{4,}$/';
+    return preg_match($PseudoPattern, $Pseudo);
+    
+};
+
+function verifEmail(string $Email): bool 
+{
+    return filter_var($Email, FILTER_VALIDATE_EMAIL);
+};
+
