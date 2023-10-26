@@ -21,13 +21,15 @@ require_once "Projet/Utils/common.php"?>
         <br>
         <input type="submit" value="Connexion" class="formulair-connexion3">
         <?php
+        
         if (isset($_GET['nom']) and isset($_GET['pwd'])) {
             if (verificationconnexion($_GET['nom'], $_GET['pwd'])) {
                 echo "vous êtes bien connecter";
             } else {
-                echo "vous n'êtes pas connecté";
+                echo "l'identifiant et le mot de passe ne corresponde pas";
             }
         }
+        
         ?>
     </form>
 

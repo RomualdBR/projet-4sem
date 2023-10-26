@@ -100,7 +100,7 @@ function recherchescore(string $recherche): array
 function verificationconnexion(string $verifpseudo, string $verifmotdepasse): bool
 {
     $pdo = connectToDbAndGetPdo();
-    $pdoStatement = $pdo->prepare('SELECT pseudo, mot_de_passe
+    $pdoStatement = $pdo->prepare('SELECT id, pseudo, mot_de_passe
     FROM utilisateur
     WHERE pseudo = :pseudo AND mot_de_passe = :motdepasse;');
     $pdoStatement->execute([
@@ -108,11 +108,13 @@ function verificationconnexion(string $verifpseudo, string $verifmotdepasse): bo
         ":motdepasse" => $verifmotdepasse
     ]);
     $verifconnexion = $pdoStatement->fetch();
-
+    
     if(!$verifconnexion) {
         return false;
     }
+    $_SESSION['userId']= $verifconnexion->id;
     return true;
+
 };
 
 function verifMdp(string $MDP): bool
