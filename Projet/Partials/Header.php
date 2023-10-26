@@ -3,12 +3,12 @@
 // require_once "./Projet/Utils/common.php";
 ?>
 <?php $current_page = basename($_SERVER['PHP_SELF']); ?>
-<?php if (isset($_SESSION['utilisateurId'])) : ?>
+<?php if (isset($_SESSION['userId'])) : ?>
     <?php
     $pdo = connectToDbAndGetPdo();
     $pdoStatement = $pdo->prepare('SELECT pseudo FROM utilisateur WHERE id = :id');
     $pdoStatement->execute([
-        ":id" => $_SESSION["utilisateurId"]
+        ":id" => $_SESSION["userId"]
     ]);
     $userConnecter = $pdoStatement->fetch();
     ?>
@@ -22,7 +22,7 @@
                     <li><a href="<?= PROJECT_FOLDER ?>Projet/Games/Memory/memory.php">JEU</a></li>
                     <li><a href="<?= PROJECT_FOLDER ?>Projet/Games/Memory/Score.php">SCORES</a></li>
                     <li><a href="<?= PROJECT_FOLDER ?>contact.php">NOUS CONTACTER</a></li>
-                    <li class="userConnecter">
+                    <li class="profilCheck">
                         <a href="<?= PROJECT_FOLDER ?>MyAccount.php">
                             <img src="<?= PROJECT_FOLDER ?>asset/images/photo_de_profil_MyAccount.png" alt="Photo_de_profil" class="photo_de_profil_myaccount_nav">
                             <p><?php echo $userConnecter->pseudo ?></p>
