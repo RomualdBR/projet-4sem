@@ -76,7 +76,6 @@
                     <li><a href="<?= PROJECT_FOLDER ?>contact.php">NOUS CONTACTER</a></li>
                     <li><a href="<?= PROJECT_FOLDER ?>login.php">SE CONNECTER</a></li>
                     <li><a href="<?= PROJECT_FOLDER ?>register.php">S'INSCRIRE</a></li>
-                    <li><a href="<?= PROJECT_FOLDER ?>MyAccount.php"><img src="<?= PROJECT_FOLDER ?>asset/images/photo_de_profil_MyAccount.png" alt="Photo_de_profil" class="photo_de_profil_myaccount_nav"></a></li>
                 </ul>
             </div>
         </nav>
@@ -92,7 +91,6 @@
                     <li <?php if ($current_page == 'contact.php') : ?> style="border-top: solid; border-top-color: #ec9123; border-width: 5px 0px;" <?php endif; ?>><a href="<?= PROJECT_FOLDER ?>contact.php" <?php if ($current_page == 'contact.php') : ?>style="color:#ec9123;" <?php endif; ?>>NOUS CONTACTER</a></li>
                     <li <?php if ($current_page == 'login.php') : ?> style="border-top: solid; border-top-color: #ec9123; border-width: 5px 0px;" <?php endif; ?>><a href="<?= PROJECT_FOLDER ?>login.php" <?php if ($current_page == 'login.php') : ?>style="color:#ec9123;" <?php endif; ?>>SE CONNECTER</a></li>
                     <li <?php if ($current_page == 'register.php') : ?> style="border-top: solid; border-top-color: #ec9123; border-width: 5px 0px;" <?php endif; ?>><a href="<?= PROJECT_FOLDER ?>register.php" <?php if ($current_page == 'register.php') : ?>style="color:#ec9123;" <?php endif; ?>>S'INSCRIRE</a></li>
-                    <li <?php if ($current_page == 'MyAccount.php') : ?> style="border-top: solid; border-top-color: #ec9123; border-width: 5px 0px;" <?php endif; ?>><a href="<?= PROJECT_FOLDER ?>MyAccount.php"><img src="<?= PROJECT_FOLDER ?>asset/images/photo_de_profil_MyAccount.png" alt="Photo_de_profil" class="photo_de_profil_myaccount_nav"></a></li>
                 </ul>
             </div>
         </nav>
