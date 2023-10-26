@@ -22,10 +22,13 @@
         $verifEmailacc = verifEmailacc($_POST['email']);
 
         if (!$verifEmail) {
-            $textEmail = "L'adresse mail ne correspond pas au critères";
+            $textEmail = "L'entrée n'est pas une adresse Email";
         }
-        elseif (!$verifEmailacc){
+        elseif ($verifEmailacc){
             $textEmail = "L'adresse mail est déjà utilisé";
+        }
+        else{
+            $textEmail = "";
         }
     }
     else{
@@ -39,8 +42,11 @@
         if (!$verifPseudo) {
             $textPseudo = "Le pseudo ne correspond pas au critères";
         }
-        elseif (!$verifPseudoacc) {
+        elseif ($verifPseudoacc) {
             $textPseudo = "Le pseudo est déjà utilisé";
+        }
+        else{
+            $textPseudo = "";
         }
     }
     else{
@@ -53,6 +59,9 @@
         if (!$verifMDP) {
             $textMDP = "Le mot de passe ne correspond pas au critères";
         } 
+        else{
+            $textMDP = "";
+        }
     }
     else{
         $textMDP = "";
@@ -64,6 +73,9 @@
         if (!$verifCMDP) {
             $textCMDP = "Le mot de passe ne correspond pas au critères";
         }
+        else{
+            $textCMDP = "";
+        }
     }
     else{
         $textCMDP = "";
@@ -71,6 +83,7 @@
 
     if (isset($_POST['motsDePasse']) && isset($_POST['confirmationMotDePasse'])) {
         if ($_POST['motsDePasse'] == $_POST['confirmationMotDePasse']) {
+            $textIdentique = "";
             $verifIdentique = true;
         } else {
             $verifIdentique = false;
@@ -82,32 +95,31 @@
     }
 
     if(isset($_POST['email']) && isset($_POST['pseudo']) && isset($_POST['motsDePasse']) && isset($_POST['confirmationMotDePasse'])){
-        $everythingOkey = $verifEmail && $verifPseudo && $verifIdentique && $verifCMDP && $verifMDP;
+        $everythingOkey = $verifEmail && !$verifEmailacc && !$verifPseudoacc&& $verifPseudo && $verifIdentique && $verifCMDP && $verifMDP;
     }
     ?>
-
     <form action="#" class="formulair-inscription" method="post">
-        <input type="text" id="email" name="email" required="required" placeholder="Email" class="formulair-inscription1">
+        <input value="<?php if (isset($everythingOkey)) {if (!$everythingOkey) {if(isset($_POST["email"])) { echo $_POST["email"];}}}?>" type="text" id="email" name="email" required="required" placeholder="Email" class="formulair-inscription1">
         <br>
 
         <?php
-        echo $textEmail
+        echo $textEmail;
         ?>
 
         <br>
-        <input type="text" id="pseudo" name="pseudo" required="Required" placeholder="Pseudo" class="formulair-inscription2">
+        <input value="<?php if (isset($everythingOkey)) {if (!$everythingOkey) {if(isset($_POST["pseudo"])) { echo $_POST["pseudo"];}}}?>" type="text" id="pseudo" name="pseudo" required="Required" placeholder="Pseudo" class="formulair-inscription2">
         <br>
 
         <?php
-        echo $textPseudo
+        echo $textPseudo;
         ?>
 
         <br>
-        <input value="<?php isset($everythingOkey) && !$everythingOkey ? $_POST['motsDePasse'] : '';?>" type="password" id="mdp" name="motsDePasse" required="required" placeholder="Mot de passe" class="formulair-inscription3">
+        <input type="password" id="mdp" name="motsDePasse" required="required" placeholder="Mot de passe" class="formulair-inscription3">
         <br>
 
         <?php
-        echo $textMDP
+        echo $textMDP;
         ?>
 
         <br>
@@ -115,12 +127,11 @@
         <br>
 
         <?php
-        echo $textCMDP
+        echo $textCMDP;
         ?>
-
         <br>
         <?php
-        echo $textIdentique
+        echo $textIdentique;
         ?>
         <br>
 
@@ -139,8 +150,9 @@
                 ]);
 
                 echo "Votre inscription a bien été réalisée";
+                header('location: login.php');
             } else {
-                echo "Loser !";
+                echo "Skill Issue";
             }
         }
         ?>
