@@ -158,7 +158,5 @@ header {
   );
   display: flex;
   align-items: center;
-  line-height: 3vh !important;
-}
-.pseudo-co {
+  line-height: 4vh !important;
 }

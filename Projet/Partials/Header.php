@@ -41,7 +41,7 @@
                     <li <?php if ($current_page == 'memory.php') : ?> style="border-top: solid; border-top-color: #ec9123; border-width: 5px 0px;" <?php endif; ?>><a href="<?= PROJECT_FOLDER ?>Projet/Games/Memory/memory.php" <?php if ($current_page == 'memory.php') : ?>style="color:#ec9123;" <?php endif; ?>>JEU</a></li>
                     <li <?php if ($current_page == 'Score.php') : ?> style="border-top: solid; border-top-color: #ec9123; border-width: 5px 0px;" <?php endif; ?>><a href="<?= PROJECT_FOLDER ?>Projet/Games/Memory/Score.php" <?php if ($current_page == 'Score.php') : ?>style="color:#ec9123;" <?php endif; ?>>SCORES</a></li>
                     <li <?php if ($current_page == 'contact.php') : ?> style="border-top: solid; border-top-color: #ec9123; border-width: 5px 0px;" <?php endif; ?>><a href="<?= PROJECT_FOLDER ?>contact.php" <?php if ($current_page == 'contact.php') : ?>style="color:#ec9123;" <?php endif; ?>>NOUS CONTACTER</a></li>
-                    <li <?php if ($current_page == 'MyAccount.php') : ?> style="border-top: solid; border-top-color: #ec9123; border-width: 5px 0px;" <?php endif; ?> class="userConnecter">
+                    <li <?php if ($current_page == 'MyAccount.php') : ?> style="border-top: solid; border-top-color: #ec9123; border-width: 5px 0px;" <?php endif; ?> class="profilCheck">
                         <a href="<?= PROJECT_FOLDER ?>MyAccount.php">
                             <img src="<?= PROJECT_FOLDER ?>asset/images/photo_de_profil_MyAccount.png" alt="Photo_de_profil" class="photo_de_profil_myaccount_nav">
                             <p><?php echo $userConnecter->pseudo ?></p>
