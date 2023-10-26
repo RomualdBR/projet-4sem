@@ -24,7 +24,7 @@
         
         if (isset($_POST['nom']) and isset($_POST['pwd'])) {
             if (verificationconnexion($_POST['nom'], $_POST['pwd'])) {
-                echo "Vous êtes bien connecter.";
+                header('location: MyAccount.php');
             } else {
                 echo "l'identifiant et le mot de passe ne corresponde pas";
             }
