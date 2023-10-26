@@ -55,7 +55,7 @@ function displayNbJoueurs(): int
 function recuperescore(): array
 {
     $pdo = connectToDbAndGetPdo();
-    $pdoStatement = $pdo->prepare('SELECT J.nom_jeu, U.pseudo, S.difficulte, S.score, (
+    $pdoStatement = $pdo->prepare('SELECT S.id_joueur, J.nom_jeu, U.pseudo, S.difficulte, S.score, (
         SELECT 
         CASE
         WHEN S.difficulte = "Difficile" THEN 3
@@ -77,7 +77,7 @@ function recuperescore(): array
 function recherchescore(string $recherche): array
 {
     $pdo = connectToDbAndGetPdo();
-    $pdoStatement = $pdo->prepare('SELECT J.nom_jeu, U.pseudo, S.difficulte, S.score, (
+    $pdoStatement = $pdo->prepare('SELECT S.id_joueur, J.nom_jeu, U.pseudo, S.difficulte, S.score, (
         SELECT 
         CASE
         WHEN S.difficulte = "Difficile" THEN 3

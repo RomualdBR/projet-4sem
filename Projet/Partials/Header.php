@@ -3,12 +3,12 @@
 // require_once "./Projet/Utils/common.php";
 ?>
 <?php $current_page = basename($_SERVER['PHP_SELF']); ?>
-<?php if (isset($_SESSION['utilisateurId'])) : ?>
+<?php if (isset($_SESSION['userId'])) : ?>
     <?php
     $pdo = connectToDbAndGetPdo();
     $pdoStatement = $pdo->prepare('SELECT pseudo FROM utilisateur WHERE id = :id');
     $pdoStatement->execute([
-        ":id" => $_SESSION["utilisateurId"]
+        ":id" => $_SESSION["userId"]
     ]);
     $userConnecter = $pdoStatement->fetch();
     ?>

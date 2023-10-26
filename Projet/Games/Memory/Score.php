@@ -40,8 +40,7 @@ require_once "../../Partials/Head.php";
                 <?php if (isset($_GET['query'])) :
                     foreach (recherchescore($_GET['query']) as $score) :
                 ?>
-
-                        <?php if ($score->pseudo == "utilisateur1") : ?>
+                        <?php if ($score->id_joueur == $_SESSION["userId"]) : ?>
                             <tr>
                                 <td style="color: orange;"><?= $score->nom_jeu ?> </td>
                                 <td class="pseudo-scores">
@@ -66,7 +65,7 @@ require_once "../../Partials/Head.php";
 
                     <?php endforeach;
                 else : foreach (recuperescore() as $score) : ?>
-                        <?php if ($score->pseudo == "utilisateur1") : ?>
+                        <?php if ($score->id_joueur == $_SESSION["userId"]) : ?>
                             <tr>
                                 <td style="color: orange;"><?= $score->nom_jeu ?> </td>
                                 <td class="pseudo-scores">
