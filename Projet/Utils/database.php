@@ -114,7 +114,6 @@ function verificationconnexion(string $verifpseudo, string $verifmotdepasse): bo
     }
     $_SESSION['userId']= $verifconnexion->id;
     return true;
-
 };
 
 function verifMdp(string $MDP): bool

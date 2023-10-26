@@ -1,9 +1,9 @@
-<?php require_once './Projet/Utils/database.php';
-require_once "Projet/Utils/common.php"?>
+<?php require_once './Projet/Utils/database.php'; ?>
+<?php require_once "Projet/Utils/common.php" ?>
 <!DOCTYPE html>
 <html lang="fr">
 
-<?php require_once "Projet/Partials/Head.php";?>
+<?php require_once "Projet/Partials/Head.php"; ?>
 
 <body>
 
@@ -24,7 +24,7 @@ require_once "Projet/Utils/common.php"?>
         
         if (isset($_POST['nom']) and isset($_POST['pwd'])) {
             if (verificationconnexion($_POST['nom'], $_POST['pwd'])) {
-                echo "vous êtes bien connecter";
+                echo "Vous êtes bien connecter.";
             } else {
                 echo "l'identifiant et le mot de passe ne corresponde pas";
             }

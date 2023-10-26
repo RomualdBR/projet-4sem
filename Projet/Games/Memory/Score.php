@@ -1,17 +1,16 @@
-<?php
-
-require_once "../../Utils/database.php";
-require_once "../../Utils/common.php";
-
-?>
 <!DOCTYPE html>
 <html lang="fr">
 
-<?php require_once SITE_ROOT . "Projet/Partials/Head.php" ?>
+<?php
+require_once "../../Utils/common.php";
+require_once "../../Utils/database.php";
+require_once "../../Partials/Head.php";
+?>
+
 
 <body>
 
-    <?php require_once SITE_ROOT . "Projet/Partials/Header.php"; ?>
+    <?php require_once "../../Partials/Header.php"; ?>
 
     <section class=banniere>
         <p>SCORES</p>
@@ -99,4 +98,4 @@ require_once "../../Utils/common.php";
 
 </body>
 
-</html>;
+</html>
