@@ -128,7 +128,6 @@ function verifPseudo(string $Pseudo): bool
 {
     $PseudoPattern = '/^.{4,}$/';
     return preg_match($PseudoPattern, $Pseudo);
-    
 };
 
 function verifEmail(string $Email): bool 
@@ -136,3 +135,22 @@ function verifEmail(string $Email): bool
     return filter_var($Email, FILTER_VALIDATE_EMAIL);
 };
 
+function verifPseudoacc(string $Pseudo)
+{
+    $pdo = connectToDbAndGetPdo();
+    $pdoStatement = $pdo->prepare('SELECT pseudo FROM utilisateur WHERE pseudo = :Pseudo;');
+    $pdoStatement->execute([":Pseudo" => $Pseudo]);
+    $PseudoUse = $pdoStatement->fetch();
+
+    return isset($PseudoUse -> pseudo);
+};
+
+function verifEmailacc(string $Email): bool 
+{
+    $pdo = connectToDbAndGetPdo();
+    $pdoStatement = $pdo->prepare('SELECT email FROM utilisateur WHERE email = :Email;');
+    $pdoStatement->execute([":Email" => $Email]);
+    $EmailUse = $pdoStatement->fetch();
+
+    return isset($EmailUse -> email);
+};
