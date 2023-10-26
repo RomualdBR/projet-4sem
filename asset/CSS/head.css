@@ -61,7 +61,7 @@ header {
   cursor: pointer;
 }
 .main-nav {
-  position: absolute;
+  position: fixed;
   padding: 50px;
   padding-top: 0px;
   display: flex;
@@ -69,6 +69,12 @@ header {
   width: 100%;
   box-sizing: border-box;
   align-items: center;
+  background: rgb(2, 0, 45);
+  background: linear-gradient(
+    180deg,
+    rgba(2, 0, 45, 1) 0%,
+    rgba(0, 0, 0, 0) 60%
+  );
 }
 
 .main-nav a {
@@ -142,4 +148,17 @@ header {
   border-top: solid;
   border-top-color: #ec9123;
   border-width: 5px 0px;
+}
+
+.profilCheck {
+  background: linear-gradient(
+    0deg,
+    rgba(236, 148, 11, 0) 50%,
+    rgba(226, 142, 20, 0.6536458333333333) 94%
+  );
+  display: flex;
+  align-items: center;
+  line-height: 3vh !important;
+}
+.pseudo-co {
 }

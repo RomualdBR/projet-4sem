@@ -22,7 +22,7 @@
                     <li><a href="<?= PROJECT_FOLDER ?>Projet/Games/Memory/memory.php">JEU</a></li>
                     <li><a href="<?= PROJECT_FOLDER ?>Projet/Games/Memory/Score.php">SCORES</a></li>
                     <li><a href="<?= PROJECT_FOLDER ?>contact.php">NOUS CONTACTER</a></li>
-                    <li class="userConnecter">
+                    <li class="profilCheck">
                         <a href="<?= PROJECT_FOLDER ?>MyAccount.php">
                             <img src="<?= PROJECT_FOLDER ?>asset/images/photo_de_profil_MyAccount.png" alt="Photo_de_profil" class="photo_de_profil_myaccount_nav">
                             <p><?php echo $userConnecter->pseudo ?></p>
