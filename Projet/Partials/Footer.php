@@ -26,9 +26,9 @@
             <br>
             <span class="bold white">Power Of Memory</span>
             <ul>
-                <li><span>Jouer !</span></li>
-                <li><span>Les scores</span></li>
-                <li><span>Nous contacter</span></li>
+                <li><a href="Projet/Games/Memory/memory.php" style="color  :aliceblue ;">Jouer !</a></li>
+                <li><a href="Projet/Games/Memory/Score.php" style="color  :aliceblue ;">Les scores</a></li>
+                <li><a href="contact.php" style="color  :aliceblue ;">Nous contacter</a></li>
             </ul>
         </div>
     </section>
