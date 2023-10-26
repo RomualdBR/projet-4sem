@@ -1,4 +1,6 @@
-<?php require_once "Projet/Utils/common.php" ?>
+<?php require_once "Projet/Utils/common.php";
+require_once "Projet/Utils/database.php";
+?>
 <!DOCTYPE html>
 <html lang="fr">
 

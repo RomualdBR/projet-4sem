@@ -1,9 +1,9 @@
-<?php require_once './Projet/Utils/database.php';
-require_once "Projet/Utils/common.php"?>
+<?php require_once './Projet/Utils/database.php'; ?>
+<?php require_once "Projet/Utils/common.php" ?>
 <!DOCTYPE html>
 <html lang="fr">
 
-<?php require_once "Projet/Partials/Head.php";?>
+<?php require_once "Projet/Partials/Head.php"; ?>
 
 <body>
 
@@ -26,6 +26,7 @@ require_once "Projet/Utils/common.php"?>
                 echo "vous êtes bien connecter";
             } else {
                 echo "vous n'êtes pas connecté";
+                session_destroy();
             }
         }
         ?>

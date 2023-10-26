@@ -109,9 +109,11 @@ function verificationconnexion(string $verifpseudo, string $verifmotdepasse): bo
     ]);
     $verifconnexion = $pdoStatement->fetch();
 
-    if(!$verifconnexion) {
+    if (!$verifconnexion) {
         return false;
     }
 
+    $_SESSION['utilisateurId'] = 2;
+    header("refresh: ;");
     return true;
 }
