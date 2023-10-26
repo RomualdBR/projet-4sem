@@ -72,7 +72,7 @@ function recuperescore(): array
     $pdoStatement->execute();
     $scores = $pdoStatement->fetchAll();
     return $scores;
-}
+};
 
 function recherchescore(string $recherche): array
 {
@@ -95,12 +95,12 @@ function recherchescore(string $recherche): array
     $cherchescore = $pdoStatement->fetchAll();
 
     return $cherchescore;
-}
+};
 
 function verificationconnexion(string $verifpseudo, string $verifmotdepasse): bool
 {
     $pdo = connectToDbAndGetPdo();
-    $pdoStatement = $pdo->prepare('SELECT pseudo, mot_de_passe
+    $pdoStatement = $pdo->prepare('SELECT id, pseudo, mot_de_passe
     FROM utilisateur
     WHERE pseudo = :pseudo AND mot_de_passe = :motdepasse;');
     $pdoStatement->execute([
@@ -108,12 +108,48 @@ function verificationconnexion(string $verifpseudo, string $verifmotdepasse): bo
         ":motdepasse" => $verifmotdepasse
     ]);
     $verifconnexion = $pdoStatement->fetch();
-
-    if (!$verifconnexion) {
+    
+    if(!$verifconnexion) {
         return false;
     }
-
-    $_SESSION['utilisateurId'] = 2;
-    header("refresh: ;");
+    $_SESSION['userId']= $verifconnexion->id;
     return true;
-}
+};
+
+function verifMdp(string $MDP): bool
+{
+    $passwordPattern = '/^(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*]).{8,}$/';
+    return preg_match($passwordPattern, $MDP);
+
+};
+
+function verifPseudo(string $Pseudo): bool
+{
+    $PseudoPattern = '/^.{4,}$/';
+    return preg_match($PseudoPattern, $Pseudo);
+};
+
+function verifEmail(string $Email): bool 
+{
+    return filter_var($Email, FILTER_VALIDATE_EMAIL);
+};
+
+function verifPseudoacc(string $Pseudo)
+{
+    $pdo = connectToDbAndGetPdo();
+    $pdoStatement = $pdo->prepare('SELECT pseudo FROM utilisateur WHERE pseudo = :Pseudo;');
+    $pdoStatement->execute([":Pseudo" => $Pseudo]);
+    $PseudoUse = $pdoStatement->fetch();
+
+    return isset($PseudoUse -> pseudo);
+};
+
+function verifEmailacc(string $Email): bool 
+{
+    $pdo = connectToDbAndGetPdo();
+    $pdoStatement = $pdo->prepare('SELECT email FROM utilisateur WHERE email = :Email;');
+    $pdoStatement->execute([":Email" => $Email]);
+    $EmailUse = $pdoStatement->fetch();
+
+    return isset($EmailUse -> email);
+};

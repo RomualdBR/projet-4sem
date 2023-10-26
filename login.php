@@ -14,21 +14,22 @@
 
 
     </section>
-    <form action="#" class="formulair-connexion">
+    <form action="#" class="formulair-connexion" method="post">
         <input type="text" id="nom" name="nom" required="required" placeholder="Nom" class="formulair-connexion1">
         <br>
         <input type="password" name="pwd" id="password" required="required" placeholder="Mot de passe" class="formulair-connexion2">
         <br>
         <input type="submit" value="Connexion" class="formulair-connexion3">
         <?php
-        if (isset($_GET['nom']) and isset($_GET['pwd'])) {
-            if (verificationconnexion($_GET['nom'], $_GET['pwd'])) {
-                echo "vous êtes bien connecter";
+        
+        if (isset($_POST['nom']) and isset($_POST['pwd'])) {
+            if (verificationconnexion($_POST['nom'], $_POST['pwd'])) {
+                echo "Vous êtes bien connecter.";
             } else {
-                echo "vous n'êtes pas connecté";
-                session_destroy();
+                echo "l'identifiant et le mot de passe ne corresponde pas";
             }
         }
+        
         ?>
     </form>
 
