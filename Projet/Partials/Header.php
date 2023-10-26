@@ -28,6 +28,9 @@
                             <p><?php echo $userConnecter->pseudo ?></p>
                         </a>
                     </li>
+                    <li>
+                        <form method="POST"><input type="submit" name="ff" value="ff">test</input></form>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -47,11 +50,17 @@
                             <p><?php echo $userConnecter->pseudo ?></p>
                         </a>
                     </li>
+                    <li>
+                        <form method="POST"><input type="submit" name="ff" value="Deconexion" class="formulair-connexion3"></input></form>
+                    </li>
                 </ul>
             </div>
         </nav>
     <?php endif; ?>
 
+    <?php if (isset($_POST['ff'])) {
+        session_destroy();
+    } ?>
 <?php else : ?>
 
     <?php if ($current_page == 'index.php') : ?>
