@@ -102,25 +102,25 @@ function verificationconnexion(string $verifpseudo, string $verifmotdepasse): bo
     $pdo = connectToDbAndGetPdo();
     $pdoStatement = $pdo->prepare('SELECT id, pseudo, mot_de_passe
     FROM utilisateur
-    WHERE pseudo = :pseudo AND mot_de_passe = :motdepasse;');
+    WHERE pseudo = :pseudo');
     $pdoStatement->execute([
         ":pseudo" => $verifpseudo,
-        ":motdepasse" => $verifmotdepasse
     ]);
     $verifconnexion = $pdoStatement->fetch();
-    
-    if(!$verifconnexion) {
+    $IsEquale = password_verify($verifmotdepasse, $verifconnexion->mot_de_passe);
+
+    if (!$IsEquale) {
         return false;
+    } else {
+        $_SESSION['userId'] = $verifconnexion->id;
+        return true;
     }
-    $_SESSION['userId']= $verifconnexion->id;
-    return true;
 };
 
 function verifMdp(string $MDP): bool
 {
     $passwordPattern = '/^(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*]).{8,}$/';
     return preg_match($passwordPattern, $MDP);
-
 };
 
 function verifPseudo(string $Pseudo): bool
@@ -129,7 +129,7 @@ function verifPseudo(string $Pseudo): bool
     return preg_match($PseudoPattern, $Pseudo);
 };
 
-function verifEmail(string $Email): bool 
+function verifEmail(string $Email): bool
 {
     return filter_var($Email, FILTER_VALIDATE_EMAIL);
 };
@@ -141,15 +141,15 @@ function verifPseudoacc(string $Pseudo)
     $pdoStatement->execute([":Pseudo" => $Pseudo]);
     $PseudoUse = $pdoStatement->fetch();
 
-    return isset($PseudoUse -> pseudo);
+    return isset($PseudoUse->pseudo);
 };
 
-function verifEmailacc(string $Email): bool 
+function verifEmailacc(string $Email): bool
 {
     $pdo = connectToDbAndGetPdo();
     $pdoStatement = $pdo->prepare('SELECT email FROM utilisateur WHERE email = :Email;');
     $pdoStatement->execute([":Email" => $Email]);
     $EmailUse = $pdoStatement->fetch();
 
-    return isset($EmailUse -> email);
+    return isset($EmailUse->email);
 };
