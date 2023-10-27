@@ -91,7 +91,7 @@ require_once "Projet/Utils/common.php";
     //Modification de mot de passe
 
     if (isset($_POST['AncienMDP'])) {
-        $verifAncienMDP = $userModif->mot_de_passe == $_POST['AncienMDP']
+        $verifAncienMDP = $userModif->mot_de_passe == $_POST['AncienMDP'];
 
         if (!$verifAncienMDP) {
             $textAncienMDP = "Mot de passe incorecte";
