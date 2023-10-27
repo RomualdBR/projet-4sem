@@ -55,7 +55,7 @@ require_once "Projet/Utils/common.php";
     }
 
     if (isset($_POST['confirmation_Email'])) {
-        $verifCMDP = $userModif->mot_de_passe == password_hash($_POST['confirmation_Email'], PASSWORD_DEFAULT);
+        $verifCMDP = $userModif->mot_de_passe == $_POST['confirmation_Email'];
 
         if (!$verifCMDP) {
             $textCEmail = "Mot de passe incorecte";
@@ -91,7 +91,7 @@ require_once "Projet/Utils/common.php";
     //Modification de mot de passe
 
     if (isset($_POST['AncienMDP'])) {
-        $verifAncienMDP = $userModif->mot_de_passe == password_hash($_POST['AncienMDP'], PASSWORD_DEFAULT);
+        $verifAncienMDP = $userModif->mot_de_passe == $_POST['AncienMDP']
 
         if (!$verifAncienMDP) {
             $textAncienMDP = "Mot de passe incorecte";
@@ -133,7 +133,7 @@ require_once "Projet/Utils/common.php";
                     SET mot_de_passe = :mot_de_passe
                     WHERE id = :id');
             $pdoStatement->execute([
-                ':mot_de_passe' => password_hash($_POST['NouveauMDP'], PASSWORD_DEFAULT),
+                ':mot_de_passe' => $_POST['NouveauMDP'],
                 ':id' => $userModif->id
             ]);
 
