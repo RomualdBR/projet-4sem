@@ -29,7 +29,7 @@
                         </a>
                     </li>
                     <li>
-                        <form method="POST"><input type="submit" name="ff" value="Deconexion" class="formulair-connexion3"></input></form>
+                        <form method="POST"><input type="submit" name="ff" value="Deconnexion" class="formulair-connexion3"></input></form>
                     </li>
                 </ul>
             </div>
