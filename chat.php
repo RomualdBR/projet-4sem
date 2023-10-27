@@ -13,7 +13,8 @@ $pdoStatement = $pdo->prepare('SELECT M.texte_message as texte_message, M.id_exp
 FROM messages AS M
 INNER JOIN utilisateur AS U
 ON M.id_expediteur = U.id
-WHERE M.date_heure_message >= NOW() - INTERVAL 1 DAY;');
+WHERE M.date_heure_message >= NOW() - INTERVAL 1 DAY;
+ORDER BY M.date_heure_message');
 $pdoStatement->execute([]);
 $GlobalMessage = $pdoStatement->fetchAll();
 ?>
