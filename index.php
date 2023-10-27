@@ -110,6 +110,8 @@
         </div>
     </section>
     <!--Fin de la partie de Romuald-->
+    <!--Partie message-->
+    <?php require_once SITE_ROOT . "chat.php" ?>
 
     <!-- Footer -->
     <?php require_once SITE_ROOT . "Projet/Partials/Footer.php" ?>
