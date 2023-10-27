@@ -18,55 +18,55 @@ ORDER BY M.date_heure_message');
 $pdoStatement->execute([]);
 $GlobalMessage = $pdoStatement->fetchAll();
 ?>
+<?php if (isset($_SESSION["userId"])) : ?> 
+    <body>
 
-<body>
-
-    <section class="tchat">
-        <div class="tchat-userprofile">
-            <img src="<?= PROJECT_FOLDER ?>asset/images/gégé.png" alt="tchat-photoprofile" class="tchat-userphoto">
-            <p>Chat Générale</p>
-        </div>
-
-        
-        <div class="tchat-message">
-                    <?php foreach ($GlobalMessage as $Messages) : ?>
-                        <?php if ($_SESSION["userId"] == $Messages->id_expediteur) : ?>
-                            <div class="tchat-usermessage">
-                                <p class="tchat-usermessageinfo autor"><?php echo $Messages->pseudo ?></p>
-                                <p class="tchat-usermessageconteiner"><?php echo $Messages->texte_message ?></p>
-                                <p class="tchat-usermessageinfo"><?php echo $Messages->date_heure_message ?></p>
-                            </div>
-                        <?php else : ?>
-                            <div class="tchat-othermessage">
-                                <img src="<?= PROJECT_FOLDER ?>asset/images/gégé.png" alt="other" class="tchat-otherphotoprofile">
-                                <p class="tchat-othermessageinfo"><?php echo $Messages->pseudo ?></p>
-                                <p class="tchat-othermessageconteiner"><?php echo $Messages->texte_message ?></p>
-                                <p class="tchat-othermessageinfo"><?php echo $Messages->date_heure_message ?></p>
-                            </div>
-                        <?php endif; ?>
-                    <?php endforeach; ?>
-
-
-            <div class="tchat-textmessage">
-                <form method="post">
-                    <input type="text" name="message" placeholder="Ecrire..." class="tchat-tchatbox" required>
-                    <input type="submit" name="envoyer" class="tchat-submit">
-                </form>
+        <section class="tchat">
+            <div class="tchat-userprofile">
+                <img src="<?= PROJECT_FOLDER ?>asset/images/gégé.png" alt="tchat-photoprofile" class="tchat-userphoto">
+                <p>Chat Générale</p>
             </div>
-        </div>
-    </section>
-    <?php
-    if (isset($_POST["message"])) {
-        $pdo = connectToDbAndGetPdo();
-        $pdoStatement = $pdo->prepare('INSERT INTO messages(id_jeu, id_expediteur, texte_message, date_heure_message)
-                VALUES  (1, :id_expediteur, :text_message, NOW());');
-        $pdoStatement->execute([
-            ':text_message' => $_POST["message"],
-            ":id_expediteur" => $_SESSION["userId"]
-        ]);
-        $userModif = $pdoStatement->fetch();
-    }
-    ?>
-</body>
 
+            
+            <div class="tchat-message">
+                        <?php foreach ($GlobalMessage as $Messages) : ?>
+                            <?php if ($_SESSION["userId"] == $Messages->id_expediteur) : ?>
+                                <div class="tchat-usermessage">
+                                    <p class="tchat-usermessageinfo autor"><?php echo $Messages->pseudo ?></p>
+                                    <p class="tchat-usermessageconteiner"><?php echo $Messages->texte_message ?></p>
+                                    <p class="tchat-usermessageinfo"><?php echo $Messages->date_heure_message ?></p>
+                                </div>
+                            <?php else : ?>
+                                <div class="tchat-othermessage">
+                                    <img src="<?= PROJECT_FOLDER ?>asset/images/gégé.png" alt="other" class="tchat-otherphotoprofile">
+                                    <p class="tchat-othermessageinfo"><?php echo $Messages->pseudo ?></p>
+                                    <p class="tchat-othermessageconteiner"><?php echo $Messages->texte_message ?></p>
+                                    <p class="tchat-othermessageinfo"><?php echo $Messages->date_heure_message ?></p>
+                                </div>
+                            <?php endif; ?>
+                        <?php endforeach; ?>
+
+
+                <div class="tchat-textmessage">
+                    <form method="post">
+                        <input type="text" name="message" placeholder="Ecrire..." class="tchat-tchatbox" required>
+                        <input type="submit" name="envoyer" class="tchat-submit">
+                    </form>
+                </div>
+            </div>
+        </section>
+        <?php
+        if (isset($_POST["message"])) {
+            $pdo = connectToDbAndGetPdo();
+            $pdoStatement = $pdo->prepare('INSERT INTO messages(id_jeu, id_expediteur, texte_message, date_heure_message)
+                    VALUES  (1, :id_expediteur, :text_message, NOW());');
+            $pdoStatement->execute([
+                ':text_message' => $_POST["message"],
+                ":id_expediteur" => $_SESSION["userId"]
+            ]);
+            $userModif = $pdoStatement->fetch();
+        }
+        ?>
+    </body>
+<?php endif; ?>
 </html>
