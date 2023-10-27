@@ -13,7 +13,7 @@
     <section class="tchat">
         <div class="tchat-userprofile">
             <img src="<?= PROJECT_FOLDER ?>asset/images/gégé.png" alt="tchat-photoprofile" class="tchat-userphoto">
-            <p>Lucky</p>
+            <p>Chat Générale</p>
         </div>
 
         <div class="tchat-message">
