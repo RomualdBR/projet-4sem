@@ -13,9 +13,9 @@ $pdoStatement = $pdo->prepare('SELECT M.texte_message as texte_message, M.id_exp
 FROM messages AS M
 INNER JOIN utilisateur AS U
 ON M.id_expediteur = U.id
-WHERE M.date_heure_message >= NOW() - INTERVAL 1 DAY;
-ORDER BY M.date_heure_message');
-$pdoStatement->execute([]);
+WHERE M.date_heure_message >= NOW() - INTERVAL 1 DAY
+ORDER BY M.date_heure_message DESC');
+$pdoStatement->execute();
 $GlobalMessage = $pdoStatement->fetchAll();
 ?>
 <?php if (isset($_SESSION["userId"])) : ?> 
@@ -23,10 +23,15 @@ $GlobalMessage = $pdoStatement->fetchAll();
 
         <section class="tchat">
             <div class="tchat-userprofile">
-                <img src="<?= PROJECT_FOLDER ?>asset/images/gégé.png" alt="tchat-photoprofile" class="tchat-userphoto">
                 <p>Chat Générale</p>
             </div>
 
+            <div class="tchat-textmessage">
+                    <form method="post">
+                        <input type="text" name="message" placeholder="Ecrire..." class="tchat-tchatbox" required>
+                        <input type="submit" name="envoyer" class="tchat-submit">
+                    </form>
+                </div>
             
             <div class="tchat-message">
                         <?php foreach ($GlobalMessage as $Messages) : ?>
@@ -47,12 +52,7 @@ $GlobalMessage = $pdoStatement->fetchAll();
                         <?php endforeach; ?>
 
 
-                <div class="tchat-textmessage">
-                    <form method="post">
-                        <input type="text" name="message" placeholder="Ecrire..." class="tchat-tchatbox" required>
-                        <input type="submit" name="envoyer" class="tchat-submit">
-                    </form>
-                </div>
+                
             </div>
         </section>
         <?php
