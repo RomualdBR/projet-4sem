@@ -153,6 +153,3 @@ function verifEmailacc(string $Email): bool
 
     return isset($EmailUse->email);
 };
-
-
-
