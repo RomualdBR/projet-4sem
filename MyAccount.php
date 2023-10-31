@@ -144,14 +144,36 @@ require_once "Projet/Utils/common.php";
     } else {
         $textRéaMDp = "";
     }
+
+
+
+    if (isset($_POST["submit"])) {
+        $file = $_FILES['file'];
+    
+        $filename = $file["name"];
+        $fileTmpName = $file["tmp_name"];
+        $filesize = $file["size"];
+        $fileError = $file["error"];
+    
+        if ($fileError == 0) {
+    
+            $uploadDir  = 'Projet/Userfiles/1/';
+    
+            $uploadPath = $uploadDir . $filename;
+    
+            if (move_uploaded_file($fileTmpName, $uploadPath)) {
+                $imgutilisateur = $uploadPath;
+            } 
+        }
+    } 
+    $userProfileImage = "$uploadPath";
     ?>
 
 
     <section class="MyAccount">
         <section class="Banière_profil_utilisateur">
             <div class="bloc_utilisateur">
-            <img src="<?php echo $userProfileImage ?>">
-            <img src="<?php echo $imgutilisateur ?>" class="imgprofilutilisateur">
+            <img src="<?php echo $userProfileImage ?>" class="imgprofilutilisateur">
                 <form action="" method="POST" enctype="multipart/form-data">
                     <label for="file" Séléctionnez une image à mettre en photo de profil:></label>
                         <input type="file" name="file" id="file">
