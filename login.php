@@ -21,7 +21,7 @@
         <br>
         <input type="submit" value="Connexion" class="formulair-connexion3">
         <?php
-        
+
         if (isset($_POST['nom']) and isset($_POST['pwd'])) {
             if (verificationconnexion($_POST['nom'], $_POST['pwd'])) {
                 header('location: MyAccount.php');
@@ -29,7 +29,7 @@
                 echo "l'identifiant et le mot de passe ne corresponde pas";
             }
         }
-        
+
         ?>
     </form>
 

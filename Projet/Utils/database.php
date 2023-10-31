@@ -153,3 +153,45 @@ function verifEmailacc(string $Email): bool
 
     return isset($EmailUse->email);
 };
+
+
+if (isset($_POST["submit"])) {
+    $file = $_FILES['file'];
+
+    $filename = $file["name"];
+    $fileTmpName = $file["tmp_name"];
+    $filesize = $file["size"];
+    $fileError = $file["error"];
+
+    if ($fileError == 0) {
+
+        $uploadDir  = 'Projet/Userfiles/1/';
+
+        $uploadPath = $uploadDir . $filename;
+
+        if (move_uploaded_file($fileTmpName, $uploadPath)) {
+            echo "Téléchargement réussi. le fichier à bien été téléchargé ";
+            $imgutilisateur = $uploadPath;
+        } else {
+            echo "Erreur lors du téléchargement";
+        }
+    } else {
+        echo "Une erreur c'est produit lors du téléchargement";
+    }
+} else {
+    switch ($fileError) {
+        case UPLOAD_ERR_OK:
+            echo "Téléchargement réussi.";
+            break;
+        case UPLOAD_ERR_INI_SIZE:
+            echo "Erreur : La taille du fichier dépasse la limite définie dans la configuration PHP.";
+            break;
+        case UPLOAD_ERR_FORM_SIZE:
+            echo "Erreur : La taille du fichier dépasse la limite définie dans le formulaire HTML.";
+            break;
+            // ... autres cas pour gérer d'autres erreurs ...
+        default:
+            echo "Une erreur inconnue s'est produite lors du téléchargement du fichier.";
+    }
+}
+$userProfileImage = $filePath;

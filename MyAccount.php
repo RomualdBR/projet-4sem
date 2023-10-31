@@ -4,7 +4,7 @@ require_once "Projet/Utils/common.php";
 <!DOCTYPE html>
 <html lang="fr">
 
-<?php require_once SITE_ROOT . "Projet/Partials/Head.php" ?>
+<?php require_once SITE_ROOT . "Projet/Partials/Head.php"; ?>
 
 <body>
 
@@ -150,9 +150,15 @@ require_once "Projet/Utils/common.php";
     <section class="MyAccount">
         <section class="Banière_profil_utilisateur">
             <div class="bloc_utilisateur">
-                <img src="<?= PROJECT_FOLDER ?>asset/images/photo_de_profil_MyAccount.png" alt="photo_de_profil_banniere" class="photo_de_profil_banniere">
-                <p class="pseudo">Nom Utilisateur</p>
-            </div>
+            <img src="<?php echo $userProfileImage ?>">
+            <img src="<?php echo $imgutilisateur ?>" class="imgprofilutilisateur">
+                <form action="" method="POST" enctype="multipart/form-data">
+                    <label for="file" Séléctionnez une image à mettre en photo de profil:></label>
+                        <input type="file" name="file" id="file">
+                        <input type="submit" name="submit" value="Télécharger">
+                </form>
+            </div> 
+            
             <div class="caracteristique_utilisateur">
                 <h3 class="info_utilisateur">Information utilisateur :</h3>
                 <p class="info_utilisateur1"> <span class="bold">Pseudo : </span><?php echo $userModif->pseudo ?></p>
@@ -227,14 +233,15 @@ require_once "Projet/Utils/common.php";
                 <p class="changement_info_mail1"><?php echo $textRéaMDp ?></p>
 
             </form>
+
+
         </section>
     </section>
     <!--Fin main-->
 
     <!--Footer-->
 
-
-    <?php require_once SITE_ROOT . "Projet/Partials/Footer.php" ?>
+    <?php require_once SITE_ROOT . "/Projet/Partials/Footer.php"; ?>
 
     <!--Fin footer-->
 

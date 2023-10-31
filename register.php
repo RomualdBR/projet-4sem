@@ -23,15 +23,12 @@
 
         if (!$verifEmail) {
             $textEmail = "L'entrée n'est pas une adresse Email";
-        }
-        elseif ($verifEmailacc){
+        } elseif ($verifEmailacc) {
             $textEmail = "L'adresse mail est déjà utilisé";
-        }
-        else{
+        } else {
             $textEmail = "";
         }
-    }
-    else{
+    } else {
         $textEmail = "";
     }
 
@@ -41,15 +38,12 @@
 
         if (!$verifPseudo) {
             $textPseudo = "Le pseudo ne correspond pas au critères";
-        }
-        elseif ($verifPseudoacc) {
+        } elseif ($verifPseudoacc) {
             $textPseudo = "Le pseudo est déjà utilisé";
-        }
-        else{
+        } else {
             $textPseudo = "";
         }
-    }
-    else{
+    } else {
         $textPseudo = "";
     }
 
@@ -58,12 +52,10 @@
 
         if (!$verifMDP) {
             $textMDP = "Le mot de passe ne correspond pas au critères";
-        } 
-        else{
+        } else {
             $textMDP = "";
         }
-    }
-    else{
+    } else {
         $textMDP = "";
     }
 
@@ -72,12 +64,10 @@
 
         if (!$verifCMDP) {
             $textCMDP = "Le mot de passe ne correspond pas au critères";
-        }
-        else{
+        } else {
             $textCMDP = "";
         }
-    }
-    else{
+    } else {
         $textCMDP = "";
     }
 
@@ -89,17 +79,22 @@
             $verifIdentique = false;
             $textIdentique = "Les mots de passes doivent être identique";
         }
-    }
-    else{
+    } else {
         $textIdentique = "";
     }
 
-    if(isset($_POST['email']) && isset($_POST['pseudo']) && isset($_POST['motsDePasse']) && isset($_POST['confirmationMotDePasse'])){
-        $everythingOkey = $verifEmail && !$verifEmailacc && !$verifPseudoacc&& $verifPseudo && $verifIdentique && $verifCMDP && $verifMDP;
+    if (isset($_POST['email']) && isset($_POST['pseudo']) && isset($_POST['motsDePasse']) && isset($_POST['confirmationMotDePasse'])) {
+        $everythingOkey = $verifEmail && !$verifEmailacc && !$verifPseudoacc && $verifPseudo && $verifIdentique && $verifCMDP && $verifMDP;
     }
     ?>
     <form action="#" class="formulair-inscription" method="post">
-        <input value="<?php if (isset($everythingOkey)) {if (!$everythingOkey) {if(isset($_POST["email"])) { echo $_POST["email"];}}}?>" type="text" id="email" name="email" required="required" placeholder="Email" class="formulair-inscription1">
+        <input value="<?php if (isset($everythingOkey)) {
+                            if (!$everythingOkey) {
+                                if (isset($_POST["email"])) {
+                                    echo $_POST["email"];
+                                }
+                            }
+                        } ?>" type="text" id="email" name="email" required="required" placeholder="Email" class="formulair-inscription1">
         <br>
 
         <?php
@@ -107,7 +102,13 @@
         ?>
 
         <br>
-        <input value="<?php if (isset($everythingOkey)) {if (!$everythingOkey) {if(isset($_POST["pseudo"])) { echo $_POST["pseudo"];}}}?>" type="text" id="pseudo" name="pseudo" required="Required" placeholder="Pseudo" class="formulair-inscription2">
+        <input value="<?php if (isset($everythingOkey)) {
+                            if (!$everythingOkey) {
+                                if (isset($_POST["pseudo"])) {
+                                    echo $_POST["pseudo"];
+                                }
+                            }
+                        } ?>" type="text" id="pseudo" name="pseudo" required="Required" placeholder="Pseudo" class="formulair-inscription2">
         <br>
 
         <?php
