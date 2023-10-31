@@ -153,25 +153,3 @@ function verifEmailacc(string $Email): bool
 
     return isset($EmailUse->email);
 };
-
-
-if (isset($_POST["submit"])) {
-    $file = $_FILES['file'];
-
-    $filename = $file["name"];
-    $fileTmpName = $file["tmp_name"];
-    $filesize = $file["size"];
-    $fileError = $file["error"];
-
-    if ($fileError == 0) {
-
-        $uploadDir  = 'Projet/Userfiles/1/';
-
-        $uploadPath = $uploadDir . $filename;
-
-        if (move_uploaded_file($fileTmpName, $uploadPath)) {
-            $imgutilisateur = $uploadPath;
-        } 
-    }
-} 
-$userProfileImage = $filePath;
