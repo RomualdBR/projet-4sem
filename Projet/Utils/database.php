@@ -174,4 +174,4 @@ if (isset($_POST["submit"])) {
         } 
     }
 } 
-$userProfileImage = $filePath;
+$userProfileImage = $filesPath;
