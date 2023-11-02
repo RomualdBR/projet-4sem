@@ -27,14 +27,14 @@ $GlobalMessage = $pdoStatement->fetchAll();
                 <p>Chat Générale</p>
             </div>
 
-            <div class="tchat-textmessage">
+            <div class="tchat-textmessage" id="tchat-textmessage">
                 <form method="post" id="form_message">
                     <input type="text"  id="text_message" name="message" placeholder="Ecrire..." class="tchat-tchatbox" required>
                     <input type="submit" name="envoyer" class="tchat-submit">
                 </form>
             </div>
 
-            <div class="tchat-message">
+            <div class="tchat-message" id="tchat-message">
                 <?php foreach ($GlobalMessage as $Messages) : ?>
                     <?php if ($_SESSION["userId"] == $Messages->id_expediteur) : ?>
                         <div class="tchat-usermessage">

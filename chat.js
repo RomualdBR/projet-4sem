@@ -23,3 +23,15 @@ document.getElementById('form_message').addEventListener('submit', function(e) {
       alert("Le message doit contenir au moins 3 caractères.");
     }
   });
+
+
+  function displayTchat(message){
+
+    var repèreTchat = document.getElementById("tchat-textmessage")
+    var creationTchat = document.createElement("div")
+    creationTchat.class = "tchat-message"
+    creationTchat.id = "tchat-message"
+    repèreTchat.insertAdjacentHTML('afterend', creationTchat)
+
+
+}
