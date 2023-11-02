@@ -538,7 +538,7 @@ html {
   background-image: url(../images/space.jpeg);
   height: 180%;
   padding-bottom: 0.5vh;
-  padding-top: 5vh; 
+  padding-top: 5vh;
 }
 
 .Banière_profil_utilisateur {
@@ -554,7 +554,7 @@ html {
   height: 15vh;
 }
 
-.imgprofilutilisateur{
+.imgprofilutilisateur {
   display: block;
   width: 8vw;
   height: 8vh;
@@ -894,6 +894,7 @@ html {
   display: flex;
 }
 
+
 /*Début page memory_jeu*/
 
 .formulaire_selection_niveau_theme{
@@ -927,3 +928,50 @@ html {
 }
 
 /*Fin page momory_jeu*/
+
+/* css bar securite mot de passe */
+.mot-de-passe {
+  text-align: center;
+}
+progress #complexite {
+  width: 50%;
+  height: 10px;
+  margin-top: 10px;
+  border: 0.4px solid;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.faible {
+  background-color: #ff5733;
+
+  width: 50%;
+  height: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.ok {
+  background-color: #f2c200;
+  width: 50%;
+  height: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.fort {
+  background-color: #4caf50;
+
+  width: 50%;
+  height: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#show {
+  position: absolute;
+  top: 17px;
+}
