@@ -116,9 +116,14 @@
         ?>
 
         <br>
-        <input type="password" id="mdp" name="motsDePasse" required="required" placeholder="Mot de passe" class="formulair-inscription3">
-        <br>
+        <div class="mot-de-passe">
+            <input type="password" id="mdp" oninput="checkPassword()" name="motsDePasse" required="required" placeholder="Mot de passe" class="formulair-inscription3">
 
+            <br>
+            <progress id="complexite" max="100" class="faible" value="0"></progress>
+            <P id="complexite-texte"></P>
+        </div>
+        <br>
         <?php
         echo $textMDP;
         ?>
@@ -126,6 +131,8 @@
         <br>
         <input type="password" id="cmdp" name="confirmationMotDePasse" required="required" placeholder="Confirmez le mot de passe" class="formulair-inscription4">
         <br>
+
+
 
         <?php
         echo $textCMDP;
@@ -165,5 +172,7 @@
     <?php require_once SITE_ROOT . "Projet/Partials/Footer.php" ?>
 
 </body>
+
+<script src="script.js"></script>
 
 </html>
