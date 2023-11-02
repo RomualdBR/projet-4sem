@@ -736,116 +736,11 @@ html {
 }
 
 /*Fin de la page memory*/
-
-/*Début de la page memorylevel*/
-
-.image_nav_jeux1:hover,
-.image_nav_jeux2:hover {
-  transform: scale(1.1);
-}
-
-.image_nav_jeux {
-  display: flex;
-  flex-direction: row;
-}
-
-.image_nav_jeux1,
-.image_nav_jeux2 {
-  width: 6vw;
-  margin-top: 10vh;
-}
-
-.image_nav_jeux2 {
-  margin-left: 3vw;
-}
-
-.image_nav_jeux1 {
-  margin-left: 6vw;
-}
-
-.titre_page_jeux {
-  font-size: 10vw;
-  margin-left: 10vw;
-}
-
-.titre_site {
-  margin-top: 13vh;
-  font-size: 1em;
-  margin-left: 7vw;
-}
-
-.level_page_jeu {
-  margin-left: 2vw;
-  margin-top: 5vh;
-  margin-bottom: 5vh;
-}
-
-.titre_regle_jeu {
-  font-size: 4vw;
-}
-
-.regle_du_jeu {
-  margin-top: 2vh;
-  width: 75vw;
-  font-size: 1.5vw;
-}
-
-.niveau1:hover,
-.niveau2:hover,
-.niveau3:hover,
-.niveau4:hover {
-  color: black;
-}
-
-.niveau2,
-.niveau3,
-.niveau4 {
-  color: white;
-  font-size: 3vw;
-  margin-left: 20%;
-}
-
-.niveau2 {
-  background-color: green;
-  padding: 1%;
-}
-
-.niveau3 {
-  background-color: #c16e03;
-  padding: 1%;
-}
-
-.niveau4 {
-  background-color: red;
-  padding: 1%;
-}
-
-.niveau1 {
-  background: red;
-  padding: 1%;
-  color: white;
-  font-size: 3vw;
-  margin-left: 20%;
-}
-
-.theme1 {
-  font-size: 4vw;
-  margin-top: 5vh;
-  margin-bottom: 1.5vh;
-}
-
-.theme {
-  font-size: 4vw;
-  margin-top: 3vh;
-  margin-bottom: 1.5vh;
-}
-
-/*Fin de la page momorylevel*/
-
 /*Début page jeu thème 1*/
 
 .page_nav_theme1 {
   display: flex;
+  height: 22%;
 }
 
 .image_nav_jeux1_theme1:hover,
@@ -882,7 +777,10 @@ html {
 }
 
 .taille_page {
-  height: 78vh;
+  height: 78%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .tableau4x4 {
@@ -901,7 +799,7 @@ html {
 }
 
 .image_jeu_theme1_8x8 {
-  width: 4.8vw;
+  
   margin-right: 5px;
 }
 .page_jeu_theme1_tab8x8 {
@@ -910,7 +808,7 @@ html {
   background-size: cover;
   display: flex;
   justify-content: center;
-  padding-top: 1%;
+  padding-top: 6%;
   width: 100%;
 }
 
@@ -924,7 +822,7 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  padding-top: 2%;
+  padding-top: 5%;
   justify-content: center;
 }
 
@@ -949,7 +847,7 @@ html {
   background-size: cover;
   display: flex;
   justify-content: center;
-  padding-top: 1%;
+  padding-top: 6%;
   width: 100%;
 }
 
@@ -958,7 +856,7 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  padding-top: 2%;
+  padding-top: 6%;
   justify-content: center;
 }
 
@@ -978,7 +876,7 @@ html {
   background-size: cover;
   display: flex;
   justify-content: center;
-  padding-top: 1%;
+  padding-top: 8%;
   width: 100%;
 }
 
@@ -987,7 +885,7 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  padding-top: 2%;
+  padding-top:6%;
   justify-content: center;
 }
 
@@ -995,3 +893,37 @@ html {
 .userConnecter {
   display: flex;
 }
+
+/*Début page memory_jeu*/
+
+.formulaire_selection_niveau_theme{
+  width: 21vw;
+  text-align: center;
+  margin-left: 9.5vw;
+  padding-top: 5vh;
+}
+
+.theme{
+  width: 10vw;
+  height: 5vh;
+  text-align: center;
+  border-radius: 10vh;
+}
+
+.niveau{
+  width: 10vw;
+  height: 5vh;
+  text-align: center;
+  border-radius: 10vw;
+}
+
+.buttonStart{
+  width: 10vw;
+  height: 5vh;
+}
+
+.chrono{
+  text-align: center;
+}
+
+/*Fin page momory_jeu*/

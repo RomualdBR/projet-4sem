@@ -25,7 +25,7 @@ require_once "../../Utils/database.php";
     <section class="jeu">
         <h2 class="titre_jeux">Tous les jeux :</h2>
         <div class="selection_jeux">
-            <button> <a href="memory_level.php"><img src="<?= PROJECT_FOLDER ?>asset/images/memoryimage.png" alt="" class="image_nav"></a></button>
+            <button> <a href="memory_jeu.php"><img src="<?= PROJECT_FOLDER ?>asset/images/memoryimage.png" alt="" class="image_nav"></a></button>
             <button><img src="<?= PROJECT_FOLDER ?>asset/images/tictactoe.png" alt="tictactoe" class="image_nav"></button>
             <button><img src="<?= PROJECT_FOLDER ?>asset/images/solitaire.pnj.jpeg" alt="solitaire" class="image_nav"></button>
         </div>
