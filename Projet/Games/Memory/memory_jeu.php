@@ -1,3 +1,4 @@
+
 <?php require_once "../../Utils/common.php" ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -41,6 +42,9 @@
         <table id="table">
 
         </table>
+    </div>
+    <div id="finish">
+
     </div>
 
 
