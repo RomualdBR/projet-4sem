@@ -1,4 +1,4 @@
-console.log(mdp.value);
+
 
 function checkPassword() {
   const strengthText = document.getElementById("complexite-texte");

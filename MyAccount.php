@@ -165,8 +165,9 @@ require_once "Projet/Utils/common.php";
                 $imgutilisateur = $uploadPath;
             } 
         }
+        $userProfileImage = "$uploadPath";
     } 
-    $userProfileImage = "$uploadPath";
+    
     ?>
 
 
