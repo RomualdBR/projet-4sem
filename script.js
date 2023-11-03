@@ -1,5 +1,3 @@
-
-
 function checkPassword() {
   const strengthText = document.getElementById("complexite-texte");
   const password = document.getElementById("mdp").value;
@@ -142,42 +140,45 @@ function display_tableau (theme,taillecarte) {
                     }
                 } else if (theme == "onepiecetheme"){
                     if (imgtheme.className == 0){
-                        imgtheme.src = "../../../asset/images/cartelol/benilde.jpg"
+                        imgtheme.src = "../../../asset/images/ImageCarteOnePiece/onepiece1.jpeg"
                     } else if (imgtheme.className == 1) {
-                        imgtheme.src = "../../../asset/images/cartelol/miss_fortune.jpg"
+                        imgtheme.src = "../../../asset/images/ImageCarteOnePiece/onepiece2.jpeg"
                     } else if (imgtheme.className == 2) {
-                        imgtheme.src = "../../../asset/images/cartelol/nasus.jpg"
+                        imgtheme.src = "../../../asset/images/ImageCarteOnePiece/onepiece3.jpeg"
                     } else if (imgtheme.className == 3) {
-                        imgtheme.src = "../../../asset/images/cartelol/orn.jpg"
+                        imgtheme.src = "../../../asset/images/ImageCarteOnePiece/onepiece4.jpeg"
                     } else if (imgtheme.className == 4) {
-                        imgtheme.src = "../../../asset/images/cartelol/pantheon.jpg"
+                        imgtheme.src = "../../../asset/images/ImageCarteOnePiece/onepiece5.jpeg"
                     } else if (imgtheme.className == 5) {
-                        imgtheme.src = "../../../asset/images/cartelol/renekton.jpg"
+                        imgtheme.src = "../../../asset/images/ImageCarteOnePiece/onepiece6.jpeg"
                     } else if (imgtheme.className == 6) {
-                        imgtheme.src = "../../../asset/images/cartelol/aurelionsol.jpg"
+                        imgtheme.src = "../../../asset/images/ImageCarteOnePiece/onepiece7.jpeg"
                     } else if (imgtheme.className == 7) {
-                        imgtheme.src = "../../../asset/images/cartelol/zoe.jpg"
+                        imgtheme.src = "../../../asset/images/ImageCarteOnePiece/onepiece8.jpeg"
                     }
                 } else if (theme == "narutocarte"){
                     if (imgtheme.className == 0){
-                        imgtheme.src = "../../../asset/images/cartelol/gangplank.jpg"
+                        imgtheme.src = "../../../asset/images/image-theme-naruto/naruto1.jpeg"
                     } else if (imgtheme.className == 1) {
-                        imgtheme.src = "../../../asset/images/cartelol/miss_fortune.jpg"
+                        imgtheme.src = "../../../asset/images/image-theme-naruto/naruto2.jpeg"
                     } else if (imgtheme.className == 2) {
-                        imgtheme.src = "../../../asset/images/cartelol/nasus.jpg"
+                        imgtheme.src = "../../../asset/images/image-theme-naruto/naruto3.jpeg"
                     } else if (imgtheme.className == 3) {
-                        imgtheme.src = "../../../asset/images/cartelol/orn.jpg"
+                        imgtheme.src = "../../../asset/images/image-theme-naruto/naruto4.jpeg"
                     } else if (imgtheme.className == 4) {
-                        imgtheme.src = "../../../asset/images/cartelol/pantheon.jpg"
+                        imgtheme.src = "../../../asset/images/image-theme-naruto/naruto5.jpeg"
                     } else if (imgtheme.className == 5) {
-                        imgtheme.src = "../../../asset/images/cartelol/renekton.jpg"
+                        imgtheme.src = "../../../asset/images/image-theme-naruto/naruto6.jpeg"
                     } else if (imgtheme.className == 6) {
-                        imgtheme.src = "../../../asset/images/cartelol/aurelionsol.jpg"
+                        imgtheme.src = "../../../asset/images/image-theme-naruto/naruto7.jpeg"
                     } else if (imgtheme.className == 7) {
-                        imgtheme.src = "../../../asset/images/cartelol/zoe.jpg"
+                        imgtheme.src = "../../../asset/images/image-theme-naruto/naruto8.jpeg"
                     }
                 }
             })
+
+            
+
             newtd.append(imgtheme);
             newtr.appendChild(newtd);            
         })    
