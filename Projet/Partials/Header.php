@@ -11,6 +11,7 @@
         ":id" => $_SESSION["userId"]
     ]);
     $userConnecter = $pdoStatement->fetch();
+    $userPseudo = $userConnecter->pseudo;
     ?>
     <?php if ($current_page == 'index.php') : ?>
 
@@ -25,7 +26,7 @@
                     <li class="profilCheck">
                         <a href="<?= PROJECT_FOLDER ?>MyAccount.php">
                             <img src="<?= PROJECT_FOLDER ?>asset/images/photo_de_profil_MyAccount.png" alt="Photo_de_profil" class="photo_de_profil_myaccount_nav">
-                            <p><?php echo $userConnecter->pseudo ?></p>
+                            <p><?php echo $userPseudo ?></p>
                         </a>
                     </li>
                     <li>

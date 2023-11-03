@@ -437,11 +437,12 @@ html {
   bottom: -45%;
   width: 20vw;
   height: 50vh;
+  border-radius: 1vh 1vh 0% 0%;
   background-color: #272647;
   transition: all 0.5s linear;
 }
 .tchat:hover {
-  transform: translateY(-95%);
+  transform: translateY(-90%);
 }
 
 /*partie user info */
