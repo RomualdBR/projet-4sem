@@ -7,6 +7,7 @@
     <?php require_once SITE_ROOT . "Projet/Partials/Head.php" ?>
 
 </head>
+
 <?php
 $pdo = connectToDbAndGetPdo();
 $pdoStatement = $pdo->prepare('SELECT M.texte_message as texte_message, M.id_expediteur as id_expediteur, U.pseudo as pseudo, M.date_heure_message as date_heure_message
@@ -18,23 +19,22 @@ ORDER BY M.date_heure_message DESC');
 $pdoStatement->execute();
 $GlobalMessage = $pdoStatement->fetchAll();
 ?>
+
 <?php if (isset($_SESSION["userId"])) : ?>
-
     <body>
-
         <section class="tchat">
             <div class="tchat-userprofile">
                 <p>Chat Générale</p>
             </div>
 
-            <div class="tchat-textmessage">
-                <form method="post">
-                    <input type="text" name="message" placeholder="Ecrire..." class="tchat-tchatbox" required>
+            <div class="tchat-textmessage" id="tchat-textmessage">
+                <form method="post" id="form_message">
+                    <input type="text"  id="text_message" name="message" placeholder="Ecrire..." class="tchat-tchatbox" required>
                     <input type="submit" name="envoyer" class="tchat-submit">
                 </form>
             </div>
 
-            <div class="tchat-message">
+            <div class="tchat-message" id="tchat-message">
                 <?php foreach ($GlobalMessage as $Messages) : ?>
                     <?php if ($_SESSION["userId"] == $Messages->id_expediteur) : ?>
                         <div class="tchat-usermessage">
@@ -51,24 +51,12 @@ $GlobalMessage = $pdoStatement->fetchAll();
                         </div>
                     <?php endif; ?>
                 <?php endforeach; ?>
-
-
-
             </div>
         </section>
-        <?php
-        if (isset($_POST["message"])) {
-            $pdo = connectToDbAndGetPdo();
-            $pdoStatement = $pdo->prepare('INSERT INTO messages(id_jeu, id_expediteur, texte_message, date_heure_message)
-                    VALUES  (1, :id_expediteur, :text_message, NOW());');
-            $pdoStatement->execute([
-                ':text_message' => $_POST["message"],
-                ":id_expediteur" => $_SESSION["userId"]
-            ]);
-            $userModif = $pdoStatement->fetch();
-        }
-        ?>
     </body>
 <?php endif; ?>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" ></script>
+<script src="chat.js"></script>
 
 </html>
