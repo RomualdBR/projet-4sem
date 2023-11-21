@@ -4,7 +4,7 @@
 <html lang="fr">
 
 <?php require_once SITE_ROOT . "Projet/Partials/Head.php" ?>
-
+<!-- ceci est un test -->
 <body>
     <!-- Partie de Benilde-->
 
